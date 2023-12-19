@@ -1,0 +1,25 @@
+@import 'colors.scss';
+@import 'theme.scss';
+@import 'code-mirror.scss';
+@import 'block-refs.scss';
+@import 'header-labels.scss';
+@import 'tasks.scss';
+@import 'admonition-blocks.scss';
+@import 'page-prop-icons.scss';
+
+/* ****************************
+************** Root ***********
+*******************************/
+
+:root {
+    --ls-font-family: "Inter";
+    --ls-main-content-max-width: 940px;
+    --ls-main-content-max-width-wide: 1280px;
+    --ls-page-text-size: 1em;
+    --ls-page-title-size: 26px;
+    --ls-tag-text-opacity: 0.8;
+    --ls-tag-text-hover-opacity: 1;
+    --ls-block-bullet-threading-width-overwrite: 2px;
+    --ls-block-bullet-active-color-overwrite: var(--ls-link-text-color);
+    --code-font-family: "Hack", monospace;
+}

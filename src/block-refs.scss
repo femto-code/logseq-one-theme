@@ -1,0 +1,79 @@
+/* block references: fix default styles */
+.block-ref p.warning {
+    display: inline;
+}
+
+.block-ref {
+    border-bottom: none;
+}
+
+.block-ref:hover {
+    color: unset;
+}
+
+
+/* block references */
+.block-ref-wrap {
+    border-bottom: none;
+
+    padding: 2px 5px;
+    border-radius: 3px;
+    background: var(--block-ref-bg);
+}
+
+.block-ref-wrap:hover {
+    background: var(--block-ref-bg-hv);
+}
+
+.block-ref-wrap .block-ref-wrap {
+    padding: 3px 0px;
+}
+
+.block-ref-wrap .block-ref-wrap .block-ref-wrap {
+    padding: 4px 0px;
+}
+
+.block-ref-wrap .block-ref-wrap .block-ref-wrap .block-ref-wrap {
+    padding: 5px 0px;
+}
+
+.block-ref-wrap .block-ref-wrap .block-ref-wrap .block-ref-wrap .block-ref-wrap {
+    padding: 6px 0px;
+}
+
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-body),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-properties),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .timestamp),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .image-resize),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .dsl-query),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .embed-block),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .embed-page) {
+    display: block;
+    cursor: alias;
+
+    padding: 1px 5px;
+}
+
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .image-resize),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-content-inner > div > span > .embed-block),
+.block-ref-wrap[data-type=default]:has(.block-ref > .block-content > .block-body > .cp__fenced-code-block) {
+    padding: 5px 5px;
+}
+
+.block-ref-wrap .block-ref>.block-content>.block-body blockquote:first-child,
+.block-ref-wrap .block-ref>.block-content>.block-body pre:first-child,
+.block-ref-wrap .block-ref>.block-content>.block-body table,
+.block-ref-wrap .block-ref>.block-content>.block-content-inner>div>span>.embed-page,
+.block-ref-wrap .block-ref>.block-content>.block-content-inner>div>span>.dsl-query table {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.block-ref-wrap .block-ref>.block-content>.block-content-inner>div>span>.image-resize>.asset-container {
+    margin-top: 0px;
+}
+
+.block-ref-wrap .admonitionblock {
+    margin-bottom: 9px;
+    margin-top: 9px;
+}

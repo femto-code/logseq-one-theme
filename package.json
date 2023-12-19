@@ -1,0 +1,30 @@
+{
+	"name": "logseq-one-theme",
+	"author": "femto-code",
+	"version": "0.0.1",
+	"description": "A clean theme inspired by One Dark Pro.",
+	"logseq": {
+		"themes": [
+			{
+				"name": "One Theme",
+				"url": "./main.css",
+				"description": "A clean theme inspired by One Dark Pro."
+			}
+		],
+		"id": "logseq-one-theme",
+		"icon": "./icon.png"
+	},
+	"scripts": {
+		"build:main": "npx sass src/main.scss main.css --no-source-map",
+		"build": "npm run build:main"
+	},
+	"devDependencies": {
+		"sass": "^1.69.5",
+		"semantic-release": "^22.0.12",
+		"@semantic-release/changelog": "^6.0.3",
+		"@semantic-release/git": "^10.0.1",
+		"@semantic-release/npm": "^11.0.2",
+		"@semantic-release/exec": "^6.0.3",
+		"@semantic-release/github": "^9.2.5"
+	}
+}

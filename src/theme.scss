@@ -1,0 +1,352 @@
+/*****************************************
+  Common Theme
+*****************************************/
+
+/* Main Layout */
+
+#right-sidebar {
+    .sidebar-item-list {
+        margin-top: 0;
+    }
+
+    .cp__right-sidebar .sidebar-item {
+        margin: 5px; // not working???
+    }
+}
+
+/* Make "New page" button opaque */
+.left-sidebar-inner .create {
+    background-image: none;
+}
+
+#main-content-container {
+    display: block;
+
+    .cp__sidebar-main-content {
+        margin: 0 auto;
+        background-color: var(--ls-primary-background-color);
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 10px 4px;
+        border-radius: 10px;
+    }
+
+    .cp__sidebar-main-content>.mx-auto {
+        // max-width: none;
+        padding: 20px 30px 20px 30px;
+    }
+
+    /* Headers */
+    .cp__sidebar-main-content h1.title {
+        color: var(--ls-primary-background-color);
+        border-radius: 4px;
+        padding: 3px 10px;
+        background-color: var(--ls-link-text-color);
+    }
+
+    .cp__sidebar-main-content h1.title .page-ref {
+        color: var(--ls-primary-background-color);
+    }
+
+    // fix annotation pages title not shown .title.block ->a.asset-ref (a gets same color as bg of .title.block)
+    .cp__sidebar-main-content h1.title a.asset-ref {
+        color: inherit;
+    }
+}
+
+/* Scrollbar style */
+html ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px
+}
+
+html ::-webkit-scrollbar-thumb {
+    background: var(--ls-scrollbar-foreground-color);
+    background-clip: padding-box;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    cursor: pointer
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+    background: var(--ct-scrollbar-thumb-hover-color);
+    border-radius: 4px;
+    border: 4px solid transparent
+}
+
+/******************************************
+ **************  Content  *****************
+ ******************************************/
+.content {
+
+    /* Tags */
+    a {
+        &.tag {
+            border: 1px solid;
+            border-radius: 3px;
+            padding: 1px 4px;
+            font-weight: normal;
+        }
+
+        &.external-link {
+            padding: 2px 4px;
+            border-radius: 3px;
+            border: 0;
+            border-bottom: 1px solid var(--ls-link-text-color);
+            text-decoration: none;
+            border-radius: 0;
+
+            &::before {
+                content: "🌏";
+                margin-right: 5px;
+            }
+
+            &:hover {
+                border-bottom: 1px solid var(--ls-link-text-hover-color);
+                background: #869ee923;
+            }
+        }
+        &.asset-ref:hover {
+            background: #869ee923;
+        }
+    }
+
+    del {
+        opacity: 0.6;
+    }
+
+    /* Bold and italic styles */
+    b {
+        font-weight: 600;
+        color: var(--ct-bold-color);
+    }
+
+    i:not(.ti),
+    em {
+        font-weight: 300;
+        color: var(--ct-italic-color);
+    }
+
+    blockquote {
+        border-radius: 5px;
+    }
+
+    .block-children-left-border {
+        transition: background-color 0.3s;
+    }
+
+    /* Block properties / linked references boxes / color-level */
+    .block-properties,
+    .color-level {
+        border: 1px solid var(--ls-border-color);
+        border-radius: 4px;
+        box-shadow: var(--box-shadow-sm);
+    }
+
+    .color-level .block-properties {
+        background-color: var(--ls-tertiary-background-color);
+    }
+
+    .block-properties .page-ref {
+        border-radius: 3px;
+        padding: 2px 0px 2px 4px;
+    }
+
+    /* Page & block refs */
+
+    .block-ref:before {
+        content: '\ea17';
+        font-family: 'tabler-icons';
+        color: var(--ls-link-text-color);
+        margin: 0 4px 0 0;
+    }
+
+    .page-ref {
+        border-radius: 3px;
+        padding: 1px 2px;
+    }
+
+    .page-ref:hover,
+    .references-blocks .page-reference:hover {
+        color: var(--ls-primary-text-color);
+        background-color: rgb(134, 158, 233, 0.5) !important;
+    }
+
+    .references-blocks-item {
+        background-color: var(--color-level-1);
+    }
+}
+
+html[data-theme="light"] {
+    .cp__header {
+        div[data-type="toolbar"] {
+            a {
+                color: var(--ls-header-button-text-color, var(--lx-gray-11, var(--ls-header-button-background)));
+            }
+            a:hover {
+                color: var(--ls-header-button-text-color-hover, var(--lx-gray-12, var(--ls-header-button-background)));
+            }
+        }
+    }
+    /* Autocomplete section borders */
+    .ui__ac-group-name {
+        border-top: 1px solid var(--ls-border-color);
+    }
+    .inline code {
+        border: 1px solid hsl(220, 13%, 18%, 0.08);
+        padding: 2px 4px !important;
+    }
+}
+
+html[data-theme="dark"] {
+
+    .dropdown-wrapper a {
+        opacity: 1 !important;
+        color: var(--ls-primary-text-color);
+    }
+    .inline code {
+        border: 1px solid hsl(203, 13%, 60%, 0.2);
+        padding: 2px 4px !important;
+    }
+    /* Theme selection */
+    .cp__themes-installed .it.is-active {
+        border: 1px solid #404b55;
+        background-color: #24282e;
+        color: #769AFF;
+    }
+}
+
+/* Journal calendar icons */
+body:not(.is-banner-active) .journal-item h1.title::before,
+body:not(.is-banner-active) .is-journals h1.title::before {
+    content: '🗓️';
+    font-size: 0.8em;
+    margin-right: 10px;
+}
+
+/* Unlinked references section title */
+.page-unlinked .foldable-title h2:before {
+    content: "\eb46";
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+    display: inline-block;
+    line-height: 1em;
+    font-family: tabler-icons;
+}
+
+.page-unlinked .foldable-title h2 {
+    opacity: .6;
+}
+
+/* PDF Viewer styles */
+.extensions__pdf-container[data-theme="dark"] .pdfViewer .textLayer {
+    background-color: var(--ls-primary-background-color, #042f3c);
+    opacity: 1;
+}
+
+.extensions__pdf-container[data-theme="dark"] {
+    background: transparent;
+}
+
+/* Custom query adjustments */
+.dsl-query .custom-query-title>.font-medium,
+:not(.dsl-query)>.custom-query .custom-query-title {
+    width: auto;
+}
+
+.custom-query-title .results-count {
+    line-height: 1.5rem;
+}
+
+/* Header styles */
+
+.editor-inner .uniline-block:is(.h1),
+.editor-inner :is(.h1),
+.ls-block h1 {
+    margin: 0;
+    font-size: 1.8em;
+    letter-spacing: -1px;
+    border-bottom: 2px solid var(--ct-h1-color) !important;
+    padding-left: 0.2rem;
+    color: var(--ct-h1-color);
+}
+
+.editor-inner .uniline-block:is(.h2),
+.editor-inner :is(.h2) {
+    margin: 0;
+    letter-spacing: -1px;
+    border-bottom: 2px solid var(--ct-h2-color) !important;
+    padding-right: 6rem;
+    padding-left: 0.2rem;
+    color: var(--ct-h2-color);
+}
+
+.ls-block h2 {
+    margin: 0;
+    letter-spacing: -1px;
+    max-width: max-content;
+    border-bottom: 2px solid var(--ct-h2-color) !important;
+    padding-right: 6rem;
+    padding-left: 0.2rem;
+    color: var(--ct-h2-color);
+}
+
+.editor-inner .uniline-block:is(.h3),
+.editor-inner :is(.h3) {
+    font-size: 1.27em;
+    min-height: 1.27em;
+    border-bottom: 2px solid var(--ct-h3-color) !important;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    color: var(--ct-h3-color);
+}
+
+.ls-block h3 {
+    font-size: 1.27em;
+    min-height: 1.27em;
+    max-width: max-content;
+    border-bottom: 2px solid var(--ct-h3-color) !important;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    color: var(--ct-h3-color);
+}
+
+.editor-inner .uniline-block:is(.h5),
+.editor-inner :is(.h5),
+.ls-block h5 {
+    font-size: 0.93em;
+    min-height: 0.93em;
+}
+
+.ls-block :is(h1, h2, h3, h4, h5) {
+    font-weight: 500;
+}
+
+/* banners plugin */
+body:is([data-page='page'], [data-page='home']).is-banner-active #banner {
+    max-width: var(--ls-main-content-max-width);
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgb(0, 0, 0, 0.1) 0 0 10px 4px;
+}
+
+body:is([data-page='page'], [data-page='home']).is-banner-active .cp__sidebar-main-content {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px!important; /* why needs important? */
+}
+
+body:is([data-page='page'], [data-page='home']).is-banner-active .ls-wide-mode #banner {
+    max-width: var(--ls-main-content-max-width-wide);
+}
+
+body:is([data-page='page'], [data-page='home']).is-banner-active #main-content-container {
+    display: block;
+}
+
+/* banner element */
+html[data-theme='dark'] body:is([data-page='page'], [data-page='home']).is-banner-active #banner::before {
+    filter: brightness(0.8);
+}
+
+body:is([data-page='page'], [data-page='home']).is-banner-active.is-icon-active .cp__sidebar-main-content>div {
+    padding-top: 0!important;
+}
