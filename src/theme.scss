@@ -9,8 +9,12 @@
         margin-top: 0;
     }
 
-    .cp__right-sidebar .sidebar-item {
+    .sidebar-item {
         margin: 5px; // not working???
+    }
+
+    .cp__right-sidebar-topbar {
+        background-color: var(--ls-secondary-background-color);
     }
 }
 

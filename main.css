@@ -149,8 +149,11 @@ html[data-theme=light] {
 #right-sidebar .sidebar-item-list {
   margin-top: 0;
 }
-#right-sidebar .cp__right-sidebar .sidebar-item {
+#right-sidebar .sidebar-item {
   margin: 5px;
+}
+#right-sidebar .cp__right-sidebar-topbar {
+  background-color: var(--ls-secondary-background-color);
 }
 
 /* Make "New page" button opaque */
