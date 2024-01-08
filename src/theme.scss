@@ -54,6 +54,10 @@
     .cp__sidebar-main-content h1.title a.asset-ref {
         color: inherit;
     }
+
+    .color-level {
+        background-color: var(--color-level-1) !important;
+    }
 }
 
 /* Scrollbar style */
