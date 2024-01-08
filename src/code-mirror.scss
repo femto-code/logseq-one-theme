@@ -184,6 +184,12 @@ html[data-theme="light"] {
 }
 html[data-theme="dark"] {
 
+    .CodeMirror-scroll {
+        padding-bottom: 50px;
+        padding-top: 0;
+        overflow-y: hidden !important;
+    }
+
     [class*="cm-s-"].CodeMirror {
         background-color: #21252B;
         color: #8E95B4;
