@@ -23,7 +23,7 @@
 ![](./preview.png)
 
 | Dark | Light |
-| ------- | ---------------- |
+| --------------- | ---------------- |
 | ![](./dark.png) | ![](./light.png) |
 
 ## What's changed
@@ -68,11 +68,13 @@ The Logseq One Theme in its first iteration is strongly inspired by [logseq-atmo
 - Refactor: use standard Logseq variables to prevent redundant CSS rules
 </details>
 
-### Known issues (WIP)
+### Known issues (WIP) / Roadmap
 
 - [ ] table styles
 - [ ] page tooltip layout
-- [ ] finish accent color support
+- [ ] complete accent color support
+- [ ] dark theme: mixture of bold and italic styles (inconsistent colors)
+- [ ] light code mirror theme inconsistency
 
 ## Install
 

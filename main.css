@@ -42,6 +42,9 @@ html[data-theme=dark] {
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-header-button-hover: #1D2026;
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+  --ls-create-button-color-sm: var(--ls-secondary-background-color);
+  --ls-create-button-color: var(--ls-secondary-background-color);
+  --ls-right-sidebar-content-background: var(--ls-primary-background-color);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-page-properties-background-color: #21252B;
   --ls-block-properties-background-color: #21252B;
@@ -115,6 +118,9 @@ html[data-theme=light] {
   --ls-left-sidebar-background: #f7f7f7;
   --ls-left-sidebar-border-color: #D3D6DF;
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+  --ls-create-button-color-sm: var(--ls-secondary-background-color);
+  --ls-create-button-color: var(--ls-secondary-background-color);
+  --ls-right-sidebar-content-background: var(--ls-primary-background-color);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-page-properties-background-color: #E2E4E9;
   --ls-block-properties-background-color: #E2E4E9;
@@ -158,7 +164,7 @@ html[data-theme=light] {
 
 /* Make "New page" button opaque */
 .left-sidebar-inner .create {
-  background-image: none;
+  background-image: none !important;
 }
 
 #main-content-container {
@@ -185,6 +191,9 @@ html[data-theme=light] {
 }
 #main-content-container .cp__sidebar-main-content h1.title a.asset-ref {
   color: inherit;
+}
+#main-content-container .color-level {
+  background-color: var(--color-level-1) !important;
 }
 
 /* Scrollbar style */
@@ -614,6 +623,11 @@ html[data-theme=light] .cm-s-solarized span.cm-meta {
 
 html[data-theme=dark] {
   /* .dark-theme */
+}
+html[data-theme=dark] .CodeMirror-scroll {
+  padding-bottom: 50px;
+  padding-top: 0;
+  overflow-y: hidden !important;
 }
 html[data-theme=dark] [class*=cm-s-].CodeMirror {
   background-color: #21252B;
