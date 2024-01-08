@@ -49,6 +49,8 @@ html[data-theme="dark"] {
     --ls-header-button-background: var(--ls-secondary-background-color);
     --ls-header-button-hover: #1D2026;
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+    --ls-create-button-color-sm: var(--ls-secondary-background-color);
+    --ls-create-button-color: var(--ls-secondary-background-color);
 
     --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
 
@@ -139,6 +141,8 @@ html[data-theme="light"] {
     --ls-left-sidebar-background: #f7f7f7;
     --ls-left-sidebar-border-color: #D3D6DF;
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+    --ls-create-button-color-sm: var(--ls-secondary-background-color);
+    --ls-create-button-color: var(--ls-secondary-background-color);
 
     --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
 
