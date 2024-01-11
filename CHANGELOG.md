@@ -1,3 +1,13 @@
+## [0.0.4](https://github.com/femto-code/logseq-one-theme/compare/v0.0.3...v0.0.4) (2024-01-11)
+
+
+### Bug Fixes
+
+* **datepicker:** adjust background for dark theme to fix invisible selected date ([ee23015](https://github.com/femto-code/logseq-one-theme/commit/ee23015b3320dac103ddd450fa5e21f3adc7314e))
+* **left sidebar:** navigation menu item backgrounds and hover styles ([5e119d5](https://github.com/femto-code/logseq-one-theme/commit/5e119d583eae110b78f4ff8b1bdb723219cbd32b))
+* **text wrapper toolbar:** adjust background color for dark theme ([7eef32a](https://github.com/femto-code/logseq-one-theme/commit/7eef32a384fe870f8f88c6494010d2f1d182d373))
+* **theme picker:** fixed border (dark) and backgrounds (light) ([54dc200](https://github.com/femto-code/logseq-one-theme/commit/54dc2009b823869f14764ff1887e5aa143997eab))
+
 ## [0.0.3](https://github.com/femto-code/logseq-one-theme/compare/v0.0.2...v0.0.3) (2024-01-08)
 
 
