@@ -205,10 +205,12 @@ html[data-theme="light"] {
     .cp__themes-installed .it:not(.is-selected) {
         background-color: unset;
     }
+    .absolute-modal {
+        border: 1px solid lightgray;
+    }
 }
 
 html[data-theme="dark"] {
-
     .dropdown-wrapper a {
         opacity: 1 !important;
         color: var(--ls-primary-text-color);
@@ -225,6 +227,9 @@ html[data-theme="dark"] {
     }
     .cp__themes-installed hr {
         border-color: #32353b;
+    }
+    .absolute-modal {
+        border: 1px solid #383941;
     }
 }
 

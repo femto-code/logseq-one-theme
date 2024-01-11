@@ -42,6 +42,8 @@ html[data-theme=dark] {
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-header-button-hover: #1D2026;
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
+  --ls-left-sidebar-active-background: #393e47;
+  --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
   --ls-create-button-color-sm: var(--ls-secondary-background-color);
   --ls-create-button-color: var(--ls-secondary-background-color);
   --ls-right-sidebar-content-background: var(--ls-primary-background-color);
@@ -117,6 +119,7 @@ html[data-theme=light] {
   --ls-header-button-hover: #D3D6DF;
   --ls-left-sidebar-background: #f7f7f7;
   --ls-left-sidebar-border-color: #D3D6DF;
+  --ls-left-sidebar-hover-background: #ebebeb;
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
   --ls-create-button-color-sm: var(--ls-secondary-background-color);
   --ls-create-button-color: var(--ls-secondary-background-color);
@@ -316,6 +319,12 @@ html[data-theme=light] .inline code {
   border: 1px solid hsla(220, 13%, 18%, 0.08);
   padding: 2px 4px !important;
 }
+html[data-theme=light] .cp__themes-installed .it:not(.is-selected) {
+  background-color: unset;
+}
+html[data-theme=light] .absolute-modal {
+  border: 1px solid lightgray;
+}
 
 html[data-theme=dark] {
   /* Theme selection */
@@ -332,6 +341,12 @@ html[data-theme=dark] .cp__themes-installed .it.is-active {
   border: 1px solid #404b55;
   background-color: #24282e;
   color: #769AFF;
+}
+html[data-theme=dark] .cp__themes-installed hr {
+  border-color: #32353b;
+}
+html[data-theme=dark] .absolute-modal {
+  border: 1px solid #383941;
 }
 
 /* Journal calendar icons */
@@ -1453,4 +1468,9 @@ a.tooltip-priority {
   --ls-block-bullet-threading-width-overwrite: 2px;
   --ls-block-bullet-active-color-overwrite: var(--ls-link-text-color);
   --code-font-family: "Hack", monospace;
+}
+
+/* Text Wrapper Plugin */
+:root.dark {
+  --kef-wrap-tb-bg: #1d2025;
 }
