@@ -228,6 +228,9 @@ html[data-theme="dark"] {
     .cp__themes-installed hr {
         border-color: #32353b;
     }
+    .datepicker {
+        background-color: var(--ls-primary-background-color);
+    }
     .absolute-modal {
         border: 1px solid #383941;
     }

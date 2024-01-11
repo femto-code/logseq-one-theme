@@ -345,6 +345,9 @@ html[data-theme=dark] .cp__themes-installed .it.is-active {
 html[data-theme=dark] .cp__themes-installed hr {
   border-color: #32353b;
 }
+html[data-theme=dark] .datepicker {
+  background-color: var(--ls-primary-background-color);
+}
 html[data-theme=dark] .absolute-modal {
   border: 1px solid #383941;
 }
