@@ -202,6 +202,9 @@ html[data-theme="light"] {
         border: 1px solid hsl(220, 13%, 18%, 0.08);
         padding: 2px 4px !important;
     }
+    .cp__themes-installed .it:not(.is-selected) {
+        background-color: unset;
+    }
 }
 
 html[data-theme="dark"] {
@@ -219,6 +222,9 @@ html[data-theme="dark"] {
         border: 1px solid #404b55;
         background-color: #24282e;
         color: #769AFF;
+    }
+    .cp__themes-installed hr {
+        border-color: #32353b;
     }
 }
 
