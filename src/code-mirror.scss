@@ -1,6 +1,21 @@
 /*****************************************
   Code Mirror
 *****************************************/
+
+.CodeMirror-scroll {
+    padding-bottom: 48px;
+    padding-top: 6px;
+    overflow-y: hidden !important;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar {
+    height: 4px;
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar {
+    display: none;
+}
+
 html[data-theme="light"] {
     .cm-s-solarized,
     .cm-s-solarized.cm-s-light,
@@ -86,9 +101,9 @@ html[data-theme="light"] {
         right: 20px;
     }
 
-    /* .white-theme */ .cp__right-sidebar .CodeMirror,
-    /* .white-theme */ .cp__right-sidebar .CodeMirror-gutters,
-    /* .white-theme */ .cp__right-sidebar .extensions__code-lang {
+    .cp__right-sidebar .CodeMirror,
+    .cp__right-sidebar .CodeMirror-gutters,
+    .cp__right-sidebar .extensions__code-lang {
         background-color: rgba(242, 241, 238, 0.95);
     }
 
@@ -96,10 +111,6 @@ html[data-theme="light"] {
     .cm-s-solarized .CodeMirror-activeline-background {
         background: rgb(172 172 172 / 24%);
     }
-
-    // .cm-s-solarized.cm-s-dark div.CodeMirror-selected {
-    //     background-color: rgba(255, 255, 255, 0.1);
-    // }
 
     .cm-s-solarized .CodeMirror-matchingbracket {
         text-decoration: underline;
@@ -157,7 +168,7 @@ html[data-theme="light"] {
 
     .cm-s-solarized span.cm-attribute,
     .cm-s-solarized span.cm-property {
-        color: --base0B;
+        color: #7fc06e;
     }
 
     .cm-s-solarized span.cm-builtin {
@@ -169,26 +180,20 @@ html[data-theme="light"] {
         color: #f08e48;
     }
 
-    /* .white-theme */ .cm-s-solarized .CodeMirror-selected {
+    .cm-s-solarized .CodeMirror-selected {
         background-color: rgba(168, 175, 255, 0.2);
     }
 
-    /* .white-theme */ .cm-s-solarized span.cm-string,
-    /* .white-theme */ .cm-s-solarized span.cm-string-2 {
+    .cm-s-solarized span.cm-string,
+    .cm-s-solarized span.cm-string-2 {
         color: #7fc06e;
     }
 
-    /* .white-theme */ .cm-s-solarized span.cm-meta {
+    .cm-s-solarized span.cm-meta {
         color: #00384d;
     }
 }
 html[data-theme="dark"] {
-
-    .CodeMirror-scroll {
-        padding-bottom: 50px;
-        padding-top: 0;
-        overflow-y: hidden !important;
-    }
 
     [class*="cm-s-"].CodeMirror {
         background-color: #21252B;
@@ -226,19 +231,13 @@ html[data-theme="dark"] {
         background: #2f30388a;
     }
 
-    // .white-theme [class*="cm-s-"].CodeMirror-focused div.CodeMirror-selected {
-    //     background: #21252B;
-    // }
-
     [class*="cm-s-"] .CodeMirror-line::selection,
-    [class*="cm-s-"] .CodeMirror-line>span::selection
-    /* .white-theme [class*="cm-s-"] .CodeMirror-line>span>span::selection */ {
+    [class*="cm-s-"] .CodeMirror-line>span::selection {
         background: #21252B;
     }
 
     [class*="cm-s-"] .CodeMirror-line::-moz-selection,
-    [class*="cm-s-"] .CodeMirror-line>span::-moz-selection
-    /* .white-theme [class*="cm-s-"] .CodeMirror-line>span>span::-moz-selection */ {
+    [class*="cm-s-"] .CodeMirror-line>span::-moz-selection {
         background: #21252B;
     }
 
@@ -330,11 +329,7 @@ html[data-theme="dark"] {
         color: #C678DD;
     }
 
-    // [class*="cm-s-"] .cm-meta {
-    //     color: #C18401;
-    // }
-
-    /* .dark-theme */ [class*="cm-s-"] .cm-meta {
+    [class*="cm-s-"] .cm-meta {
         color: #E5D27B;
     }
 }
