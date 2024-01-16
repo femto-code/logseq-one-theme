@@ -29,7 +29,7 @@ html[data-theme=dark] {
   --ls-dropdown-title-color: #869EE9;
   --ls-dropdown-title-background: #202124;
   --ls-settings-list-item-hover-background-color: #21252b;
-  --ls-border-color: #181B20;
+  --ls-border-color: #32353b;
   --ls-secondary-border-color: #505255;
   --ls-tertiary-border-color: #464646;
   --color-level-3: #33363c;
@@ -78,7 +78,6 @@ html[data-theme=dark] {
 ********* Light Theme **********
 *******************************/
 .light-theme,
-.white-theme,
 html[data-theme=light] {
   --ls-primary-background-color: #F1F2F4;
   --ls-secondary-background-color: #E2E4E9;
@@ -225,7 +224,6 @@ html ::-webkit-scrollbar-thumb:hover {
 .content {
   /* Tags */
   /* Bold and italic styles */
-  /* Block properties / linked references boxes / color-level */
   /* Page & block refs */
 }
 .content a.tag {
@@ -262,7 +260,6 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 .content i:not(.ti),
 .content em {
-  font-weight: 300;
   color: var(--ct-italic-color);
 }
 .content blockquote {
@@ -312,7 +309,7 @@ html[data-theme=light] .cp__header div[data-type=toolbar] a {
 html[data-theme=light] .cp__header div[data-type=toolbar] a:hover {
   color: var(--ls-header-button-text-color-hover, var(--lx-gray-12, var(--ls-header-button-background)));
 }
-html[data-theme=light] .ui__ac-group-name {
+html[data-theme=light] #ui__ac-inner div:not(:first-child) div.ui__ac-group-name {
   border-top: 1px solid var(--ls-border-color);
 }
 html[data-theme=light] .inline code {
@@ -341,9 +338,6 @@ html[data-theme=dark] .cp__themes-installed .it.is-active {
   border: 1px solid #404b55;
   background-color: #24282e;
   color: #769AFF;
-}
-html[data-theme=dark] .cp__themes-installed hr {
-  border-color: #32353b;
 }
 html[data-theme=dark] .datepicker {
   background-color: var(--ls-primary-background-color);
@@ -468,7 +462,7 @@ body:is([data-page=page], [data-page=home]).is-banner-active #banner {
 body:is([data-page=page], [data-page=home]).is-banner-active .cp__sidebar-main-content {
   position: relative;
   margin: 0 auto;
-  border-radius: 0 0 10px 10px !important; /* why needs important? */
+  border-radius: 0 0 10px 10px !important;
 }
 
 body:is([data-page=page], [data-page=home]).is-banner-active .ls-wide-mode #banner {
@@ -491,13 +485,23 @@ body:is([data-page=page], [data-page=home]).is-banner-active.is-icon-active .cp_
 /*****************************************
   Code Mirror
 *****************************************/
+.CodeMirror-scroll {
+  padding-bottom: 48px;
+  padding-top: 6px;
+  overflow-y: hidden !important;
+}
+
+.CodeMirror-hscrollbar::-webkit-scrollbar {
+  height: 4px;
+}
+
+.CodeMirror-vscrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 html[data-theme=light] {
   /* theme general */
-  /* .white-theme */
   /* Rewrite .cm-s-solarized */
-  /* .white-theme */
-  /* .white-theme */
-  /* .white-theme */
 }
 html[data-theme=light] .cm-s-solarized,
 html[data-theme=light] .cm-s-solarized.cm-s-light,
@@ -619,7 +623,7 @@ html[data-theme=light] .cm-s-solarized span.cm-qualifier {
 }
 html[data-theme=light] .cm-s-solarized span.cm-attribute,
 html[data-theme=light] .cm-s-solarized span.cm-property {
-  color: --base0B;
+  color: #7fc06e;
 }
 html[data-theme=light] .cm-s-solarized span.cm-builtin {
   color: #27b4b1;
@@ -639,14 +643,6 @@ html[data-theme=light] .cm-s-solarized span.cm-meta {
   color: #00384d;
 }
 
-html[data-theme=dark] {
-  /* .dark-theme */
-}
-html[data-theme=dark] .CodeMirror-scroll {
-  padding-bottom: 50px;
-  padding-top: 0;
-  overflow-y: hidden !important;
-}
 html[data-theme=dark] [class*=cm-s-].CodeMirror {
   background-color: #21252B;
   color: #8E95B4;
@@ -1066,7 +1062,6 @@ a.tooltip-priority {
 }
 
 .admonitionblock .admonition-icon {
-  border-right-color: var(--ls-tertiary-border-color);
   padding-right: 10px;
 }
 
