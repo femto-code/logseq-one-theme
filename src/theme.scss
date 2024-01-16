@@ -192,7 +192,7 @@ html[data-theme="light"] {
         }
     }
     /* Autocomplete section borders */
-    .ui__ac-group-name {
+    #ui__ac-inner div:not(:first-child) div.ui__ac-group-name {
         border-top: 1px solid var(--ls-border-color);
     }
     .inline code {
