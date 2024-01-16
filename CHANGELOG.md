@@ -1,3 +1,13 @@
+## [0.0.5](https://github.com/femto-code/logseq-one-theme/compare/v0.0.4...v0.0.5) (2024-01-16)
+
+
+### Bug Fixes
+
+* **autocomplete:** remove redundant border in light theme ([1b1417c](https://github.com/femto-code/logseq-one-theme/commit/1b1417c80e3262655d98349ffffb33b3f6505ffa))
+* **borders:** updated dark theme border color ([eb6d133](https://github.com/femto-code/logseq-one-theme/commit/eb6d133f3352f0966fa6dd8a0e84108b1a7dac4b))
+* **codemirror:** further improvements to container and fixes ([83b2b17](https://github.com/femto-code/logseq-one-theme/commit/83b2b17169db824f11336282a95fa971b585b903))
+* **misc:** code clean up and minor adjustments to italic style ([0b43ec0](https://github.com/femto-code/logseq-one-theme/commit/0b43ec0af6d32f1ebb96d2e23a61a468be383376))
+
 ## [0.0.4](https://github.com/femto-code/logseq-one-theme/compare/v0.0.3...v0.0.4) (2024-01-11)
 
 
