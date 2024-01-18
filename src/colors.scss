@@ -31,6 +31,10 @@ html[data-theme="dark"] {
     --ls-link-ref-text-color: #869EE9;
     --ls-link-ref-text-hover-color: var(--ls-link-text-color);
     --ls-block-ref-link-text-color: var(--ls-secondary-text-color);
+    --ls-page-ref-text-color: var(--ls-link-ref-text-color);
+    --ls-page-ref-text-color-hover: #97a9df;
+    --ls-page-reference-hover-background: rgba(134, 158, 233, 0.137254902);
+    --ls-page-reference-block-hover-background: var(--ls-tertiary-background-color);
 
     --ls-dropdown-title-color: #869EE9;
     --ls-dropdown-title-background: #202124;
@@ -122,6 +126,10 @@ html[data-theme="light"] {
     --ls-link-text-color: #869EE9;
     --ls-link-ref-text-hover-color: var(--ls-link-text-color);
     --ls-block-ref-link-text-color: var(--ls-secondary-text-color);
+    --ls-page-ref-text-color: var(--ls-link-ref-text-color);
+    --ls-page-ref-text-color-hover: var(--ls-link-ref-text-color);
+    --ls-page-reference-hover-background: var(--ls-secondary-background-color);
+    --ls-page-reference-block-hover-background: var(--ls-quaternary-background-color);
     
     --ls-dropdown-title-color: #869EE9;
     --ls-dropdown-title-background: #f1f2f4;

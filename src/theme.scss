@@ -150,11 +150,6 @@ html ::-webkit-scrollbar-thumb:hover {
         background-color: var(--ls-tertiary-background-color);
     }
 
-    .block-properties .page-ref {
-        border-radius: 3px;
-        padding: 2px 0px 2px 4px;
-    }
-
     /* Page & block refs */
 
     .block-ref:before {
@@ -164,16 +159,14 @@ html ::-webkit-scrollbar-thumb:hover {
         margin: 0 4px 0 0;
     }
 
-    .page-ref {
+    .page-ref, .page-reference {
         border-radius: 3px;
         padding: 1px 2px;
     }
 
-    .page-ref:hover,
-    .references-blocks .page-reference:hover {
-        color: var(--ls-primary-text-color);
-        background-color: rgb(134, 158, 233, 0.5) !important;
-    }
+    // .page-ref:hover {
+    //     background-color: rgb(134, 158, 233, 0.5) !important;
+    // }
 
     .references-blocks-item {
         background-color: var(--color-level-1);
