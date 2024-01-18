@@ -1,3 +1,19 @@
+# [0.1.0](https://github.com/femto-code/logseq-one-theme/compare/v0.0.5...v0.1.0) (2024-01-18)
+
+
+### Bug Fixes
+
+* **codemirror:** improved visibility of line numbers for code view (dark theme) ([ccc6786](https://github.com/femto-code/logseq-one-theme/commit/ccc678606c91e9ce589ed32b09797d9a2d6f2751))
+* **marked text:** adjust background color for dark theme ([846af7c](https://github.com/femto-code/logseq-one-theme/commit/846af7ce2eb2aa57c845b1e36cdabd0a759e7b2a))
+
+
+### Features
+
+* **accent color support:** major improvements for choice of colors ([89ac828](https://github.com/femto-code/logseq-one-theme/commit/89ac82839ba997d77639aa953f7937c562b27636))
+* **compatibility to Logseq v0.10.4:** fit new UI component changes ([6dfd867](https://github.com/femto-code/logseq-one-theme/commit/6dfd8675661c27cda06951899f0b8e384bd85266))
+* **page references:** refreshed styling and layout ([f247ed8](https://github.com/femto-code/logseq-one-theme/commit/f247ed839723cb48af2b0fdf9a891d92b576cc52))
+* **table:** add proper custom table styling ([f1c8187](https://github.com/femto-code/logseq-one-theme/commit/f1c81873a5198b2c7c60bf23c61ae05332c4fe3e))
+
 ## [0.0.5](https://github.com/femto-code/logseq-one-theme/compare/v0.0.4...v0.0.5) (2024-01-16)
 
 
