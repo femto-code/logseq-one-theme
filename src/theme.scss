@@ -91,6 +91,9 @@ html ::-webkit-scrollbar-thumb:hover {
             border-radius: 3px;
             padding: 1px 4px;
             font-weight: normal;
+            &:hover {
+                text-decoration: none;
+            }
         }
 
         &.external-link {
@@ -109,11 +112,16 @@ html ::-webkit-scrollbar-thumb:hover {
             &:hover {
                 border-bottom: 1px solid var(--ls-link-text-hover-color);
                 background: #869ee923;
+                cursor: pointer;
             }
         }
         &.asset-ref:hover {
             background: #869ee923;
         }
+    }
+
+    blockquote {
+        border-left-color: var(--ls-page-blockquote-border-color, #d3d3d3);
     }
 
     del {
