@@ -206,11 +206,6 @@ html[data-theme="dark"] {
         background-color: #21252B !important;
     }
 
-    .cm-s-solarized.cm-s-dark .CodeMirror-linenumber .CodeMirror-linenumbers {
-        color: #ABB2BF;
-        text-shadow: #21252B;
-    }
-
     [class*="cm-s-"] .CodeMirror-gutters {
         background-color: #21252B !important;
         color: #ABB2BF;
@@ -220,7 +215,7 @@ html[data-theme="dark"] {
     [class*="cm-s-"] .CodeMirror-guttermarker,
     [class*="cm-s-"] .CodeMirror-guttermarker-subtle,
     [class*="cm-s-"] .CodeMirror-linenumber {
-        color: #35394B;
+        color: #58595f;
     }
 
     [class*="cm-s-"] .CodeMirror-cursor {
