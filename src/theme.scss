@@ -110,8 +110,8 @@ html ::-webkit-scrollbar-thumb:hover {
             }
 
             &:hover {
-                border-bottom: 1px solid var(--ls-link-text-hover-color);
-                background: #869ee923;
+                // border-bottom: 1px solid var(--ls-link-text-hover-color);
+                background: var(--lx-accent-03-alpha); // #869ee923
                 cursor: pointer;
             }
         }
