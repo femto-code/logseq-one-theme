@@ -178,6 +178,21 @@ html ::-webkit-scrollbar-thumb:hover {
     .references-blocks-item {
         background-color: var(--color-level-1);
     }
+
+    // Table
+    .table-wrapper>table td,
+    .table-wrapper>table th {
+        border: solid 1px var(--ls-border-color);
+    }
+
+    .table-wrapper>table th {
+        border-bottom: 2px solid var(--ls-border-color);
+    }
+
+    th {
+        font-size: 1em;
+        font-weight: 500;
+    }
 }
 
 html[data-theme="light"] {
