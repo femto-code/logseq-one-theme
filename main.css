@@ -22,13 +22,20 @@ html[data-theme=dark] {
   --ls-tag-text-color: #869EE9;
   --ls-tag-text-hover-color: #BECBF3;
   --ls-link-text-color: #869EE9;
-  --ls-link-text-hover-color: #869EE9;
-  --ls-link-ref-text-color: #869EE9;
-  --ls-link-ref-text-hover-color: var(--ls-link-text-color);
+  --lx-accent-11: var(--ls-link-text-color);
+  --ls-link-text-hover-color: var(--ls-link-text-color);
+  --lx-accent-12: var(--ls-link-text-color);
+  --ls-link-ref-text-hover-color: var(--lx-accent-11);
+  --lx-accent-03-alpha: #869ee923;
+  --ls-anchor-link-text-color-hover: var(--lx-accent-11);
   --ls-block-ref-link-text-color: var(--ls-secondary-text-color);
+  --ls-page-ref-text-color: var(--ls-link-ref-text-color);
+  --ls-page-ref-text-color-hover: #97a9df;
+  --ls-page-reference-hover-background: rgba(134, 158, 233, 0.137254902);
+  --ls-page-reference-block-hover-background: var(--ls-tertiary-background-color);
   --ls-dropdown-title-color: #869EE9;
   --ls-dropdown-title-background: #202124;
-  --ls-settings-list-item-hover-background-color: #21252b;
+  --lx-gray-05: #21252b;
   --ls-border-color: #32353b;
   --ls-secondary-border-color: #505255;
   --ls-tertiary-border-color: #464646;
@@ -56,7 +63,7 @@ html[data-theme=dark] {
   --ls-page-blockquote-bg-color: #21252B;
   --ls-page-blockquote-border-color: #495162;
   --ls-page-mark-color: #282C34;
-  --ls-page-mark-bg-color: #E5D27B;
+  --ls-page-mark-bg-color: #bfae3a;
   --ls-selection-background-color: #495162;
   --ls-block-highlight-color: #495162;
   --ls-block-bullet-color: #495162;
@@ -72,6 +79,9 @@ html[data-theme=dark] {
   --box-shadow-sm: rgba(0, 0, 0, 0.1) 0 2px 3px 0;
   --block-ref-bg: rgb(86 90 122 / 40%);
   --block-ref-bg-hv: rgb(86 90 122 / 50%);
+  --popover: 216deg 13.16% 14.9%;
+  --border: 220deg 8.26% 21.37%;
+  --accent: 220deg 13.04% 18.04%;
 }
 
 /* *****************************
@@ -95,14 +105,21 @@ html[data-theme=light] {
   --ls-secondary-text-color: #282C34;
   --ls-tag-text-color: #869EE9;
   --ls-tag-text-hover-color: #BECBF3;
-  --ls-link-text-hover-color: #869EE9;
-  --ls-link-ref-text-color: #869EE9;
   --ls-link-text-color: #869EE9;
-  --ls-link-ref-text-hover-color: var(--ls-link-text-color);
+  --lx-accent-11: var(--ls-link-text-color);
+  --ls-link-text-hover-color: var(--ls-link-text-color);
+  --lx-accent-12: var(--ls-link-text-color);
+  --ls-link-ref-text-hover-color: var(--lx-accent-11);
+  --lx-accent-03-alpha: #869ee923;
+  --ls-anchor-link-text-color-hover: var(--lx-accent-11);
   --ls-block-ref-link-text-color: var(--ls-secondary-text-color);
+  --ls-page-ref-text-color: var(--ls-link-ref-text-color);
+  --ls-page-ref-text-color-hover: var(--ls-link-ref-text-color);
+  --ls-page-reference-hover-background: var(--ls-secondary-background-color);
+  --ls-page-reference-block-hover-background: var(--ls-quaternary-background-color);
   --ls-dropdown-title-color: #869EE9;
   --ls-dropdown-title-background: #f1f2f4;
-  --ls-settings-list-item-hover-background-color: #E2E4E9;
+  --lx-gray-05: #E2E4E9;
   --ls-settings-dropdown-background: #F1F2F4;
   --ls-settings-dropdown-link-item-background: #F1F2F4;
   --ls-modal-panel-color: #F1F2F4;
@@ -232,6 +249,9 @@ html ::-webkit-scrollbar-thumb:hover {
   padding: 1px 4px;
   font-weight: normal;
 }
+.content a.tag:hover {
+  text-decoration: none;
+}
 .content a.external-link {
   padding: 2px 4px;
   border-radius: 3px;
@@ -245,11 +265,14 @@ html ::-webkit-scrollbar-thumb:hover {
   margin-right: 5px;
 }
 .content a.external-link:hover {
-  border-bottom: 1px solid var(--ls-link-text-hover-color);
-  background: rgba(134, 158, 233, 0.137254902);
+  background: var(--lx-accent-03-alpha);
+  cursor: pointer;
 }
 .content a.asset-ref:hover {
   background: rgba(134, 158, 233, 0.137254902);
+}
+.content blockquote {
+  border-left-color: var(--ls-page-blockquote-border-color, #d3d3d3);
 }
 .content del {
   opacity: 0.6;
@@ -277,27 +300,29 @@ html ::-webkit-scrollbar-thumb:hover {
 .content .color-level .block-properties {
   background-color: var(--ls-tertiary-background-color);
 }
-.content .block-properties .page-ref {
-  border-radius: 3px;
-  padding: 2px 0px 2px 4px;
-}
 .content .block-ref:before {
   content: "\ea17";
   font-family: "tabler-icons";
   color: var(--ls-link-text-color);
   margin: 0 4px 0 0;
 }
-.content .page-ref {
+.content .page-ref, .content .page-reference {
   border-radius: 3px;
   padding: 1px 2px;
 }
-.content .page-ref:hover,
-.content .references-blocks .page-reference:hover {
-  color: var(--ls-primary-text-color);
-  background-color: rgba(134, 158, 233, 0.5) !important;
-}
 .content .references-blocks-item {
   background-color: var(--color-level-1);
+}
+.content .table-wrapper > table td,
+.content .table-wrapper > table th {
+  border: solid 1px var(--ls-border-color);
+}
+.content .table-wrapper > table th {
+  border-bottom: 2px solid var(--ls-border-color);
+}
+.content th {
+  font-size: 1em;
+  font-weight: 500;
 }
 
 html[data-theme=light] {
@@ -344,6 +369,9 @@ html[data-theme=dark] .datepicker {
 }
 html[data-theme=dark] .absolute-modal {
   border: 1px solid #383941;
+}
+html[data-theme=dark] mark {
+  background: #bfae3a !important;
 }
 
 /* Journal calendar icons */
@@ -474,10 +502,6 @@ body:is([data-page=page], [data-page=home]).is-banner-active #main-content-conta
 }
 
 /* banner element */
-html[data-theme=dark] body:is([data-page=page], [data-page=home]).is-banner-active #banner::before {
-  filter: brightness(0.8);
-}
-
 body:is([data-page=page], [data-page=home]).is-banner-active.is-icon-active .cp__sidebar-main-content > div {
   padding-top: 0 !important;
 }
@@ -652,10 +676,6 @@ html[data-theme=dark] [class*=cm-s-].CodeMirror {
 html[data-theme=dark] .cm-s-solarized.cm-s-dark .CodeMirror-gutters {
   background-color: #21252B !important;
 }
-html[data-theme=dark] .cm-s-solarized.cm-s-dark .CodeMirror-linenumber .CodeMirror-linenumbers {
-  color: #ABB2BF;
-  text-shadow: #21252B;
-}
 html[data-theme=dark] [class*=cm-s-] .CodeMirror-gutters {
   background-color: #21252B !important;
   color: #ABB2BF;
@@ -664,7 +684,7 @@ html[data-theme=dark] [class*=cm-s-] .CodeMirror-gutters {
 html[data-theme=dark] [class*=cm-s-] .CodeMirror-guttermarker,
 html[data-theme=dark] [class*=cm-s-] .CodeMirror-guttermarker-subtle,
 html[data-theme=dark] [class*=cm-s-] .CodeMirror-linenumber {
-  color: #35394B;
+  color: #58595f;
 }
 html[data-theme=dark] [class*=cm-s-] .CodeMirror-cursor {
   border-left: 2px solid #61AFEF;

@@ -378,9 +378,9 @@ body:is([data-page='page'], [data-page='home']).is-banner-active #main-content-c
 }
 
 /* banner element */
-html[data-theme='dark'] body:is([data-page='page'], [data-page='home']).is-banner-active #banner::before {
-    filter: brightness(0.8);
-}
+// html[data-theme='dark'] body:is([data-page='page'], [data-page='home']).is-banner-active #banner::before {
+//     filter: brightness(0.8);
+// }
 
 body:is([data-page='page'], [data-page='home']).is-banner-active.is-icon-active .cp__sidebar-main-content>div {
     padding-top: 0!important;
