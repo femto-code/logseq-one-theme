@@ -251,6 +251,14 @@ html[data-theme="dark"] {
     .form-control textarea {
         background-color: var(--ls-modal-panel-color, var(--lx-gray-04, var(--ls-secondary-background-color)));
     }
+    // support right click popover in left sidebar
+    .bg-popover {
+        background: var(--ls-secondary-background-color);
+        border-color: var(--ls-border-color);
+    }
+    .focus\:bg-accent:focus {
+        background-color: var(--ls-primary-background-color);
+    }
 }
 
 /* Journal calendar icons */
