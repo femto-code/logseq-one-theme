@@ -1,3 +1,14 @@
+## [0.1.1](https://github.com/femto-code/logseq-one-theme/compare/v0.1.0...v0.1.1) (2024-01-21)
+
+
+### Bug Fixes
+
+* **accent color support:** further improvements to colors ([e7f7d7c](https://github.com/femto-code/logseq-one-theme/commit/e7f7d7c8cbc5c1f0c87240000001329729cd547f))
+* **form control text area:** background color (dark theme) ([c209be8](https://github.com/femto-code/logseq-one-theme/commit/c209be86033d1b2fd0f55550c35675875ce5370f))
+* **journal queries:** adjust background color ([6e54a0b](https://github.com/femto-code/logseq-one-theme/commit/6e54a0b1528f28267543c29394b6721e1039598b))
+* **left sidebar:** add styles for right-click menu (new in Logseq v0.10.4) ([5dcf0f2](https://github.com/femto-code/logseq-one-theme/commit/5dcf0f2fb5300a5e601e48f3bd31f54de5aaecd6))
+* **tippy-wrapper:** add styles for page peak popup ([8979a10](https://github.com/femto-code/logseq-one-theme/commit/8979a10537396d95d0bf382482753741cee325de))
+
 # [0.1.0](https://github.com/femto-code/logseq-one-theme/compare/v0.0.5...v0.1.0) (2024-01-18)
 
 
