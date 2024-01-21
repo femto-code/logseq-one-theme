@@ -42,8 +42,7 @@ html[data-theme="dark"] {
 
     --ls-dropdown-title-color: #869EE9;
     --ls-dropdown-title-background: #202124;
-    // --ls-settings-list-item-hover-background-color: #21252b;
-    --lx-gray-05: #21252b;
+    --lx-gray-05: #21252b; // --ls-settings-list-item-hover-background-color
     
     --ls-border-color: #32353b; // #181B20
     --ls-secondary-border-color: #505255;
@@ -60,9 +59,8 @@ html[data-theme="dark"] {
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
     --ls-left-sidebar-active-background: #393e47;
     --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
-    --ls-create-button-color-sm: var(--ls-secondary-background-color);
-    --ls-create-button-color: var(--ls-secondary-background-color);
     --ls-right-sidebar-content-background: var(--ls-primary-background-color);
+    --ls-right-ridebar-color: #21252B; // right sidebar background
 
     --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
 
@@ -101,6 +99,10 @@ html[data-theme="dark"] {
     --popover: 216deg 13.16% 14.9%;
     --border: 220deg 8.26% 21.37%;
     --accent: 220deg 13.04% 18.04%;
+
+    --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
+    --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
+    --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
 }
 
 /* *****************************
@@ -166,9 +168,8 @@ html[data-theme="light"] {
     --ls-left-sidebar-border-color: #D3D6DF;
     --ls-left-sidebar-hover-background: #ebebeb;
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
-    --ls-create-button-color-sm: var(--ls-secondary-background-color);
-    --ls-create-button-color: var(--ls-secondary-background-color);
     --ls-right-sidebar-content-background: var(--ls-primary-background-color);
+    --ls-right-ridebar-color: #E2E4E9;
 
     --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
 
@@ -203,4 +204,8 @@ html[data-theme="light"] {
     --box-shadow-sm: rgba(171, 171, 171, 0.1) 0 2px 3px 0;
     --block-ref-bg: hsla(0, 0%, 40%, .1);
     --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
+
+    --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
+    --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
+    --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
 }
