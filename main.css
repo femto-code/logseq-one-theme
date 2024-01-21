@@ -51,9 +51,8 @@ html[data-theme=dark] {
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
   --ls-left-sidebar-active-background: #393e47;
   --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
-  --ls-create-button-color-sm: var(--ls-secondary-background-color);
-  --ls-create-button-color: var(--ls-secondary-background-color);
   --ls-right-sidebar-content-background: var(--ls-primary-background-color);
+  --ls-right-ridebar-color: #21252B;
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-page-properties-background-color: #21252B;
   --ls-block-properties-background-color: #21252B;
@@ -82,6 +81,10 @@ html[data-theme=dark] {
   --popover: 216deg 13.16% 14.9%;
   --border: 220deg 8.26% 21.37%;
   --accent: 220deg 13.04% 18.04%;
+  --lx-gray-03: var(--ls-secondary-background-color);
+  --ct-color-level-1: #21252B;
+  --primary: 225.45deg 69.23% 71.96%;
+  --lx-accent-10: 225.45deg 69.23% 75%;
 }
 
 /* *****************************
@@ -137,9 +140,8 @@ html[data-theme=light] {
   --ls-left-sidebar-border-color: #D3D6DF;
   --ls-left-sidebar-hover-background: #ebebeb;
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
-  --ls-create-button-color-sm: var(--ls-secondary-background-color);
-  --ls-create-button-color: var(--ls-secondary-background-color);
   --ls-right-sidebar-content-background: var(--ls-primary-background-color);
+  --ls-right-ridebar-color: #E2E4E9;
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-page-properties-background-color: #E2E4E9;
   --ls-block-properties-background-color: #E2E4E9;
@@ -165,6 +167,10 @@ html[data-theme=light] {
   --box-shadow-sm: rgba(171, 171, 171, 0.1) 0 2px 3px 0;
   --block-ref-bg: hsla(0, 0%, 40%, .1);
   --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
+  --lx-gray-03: var(--ls-secondary-background-color);
+  --ct-color-level-1: #eceded;
+  --primary: 225.45deg 69.23% 71.96%;
+  --lx-accent-10: 225.45deg 69.23% 75%;
 }
 
 /*****************************************
@@ -178,7 +184,7 @@ html[data-theme=light] {
   margin: 5px;
 }
 #right-sidebar .cp__right-sidebar-topbar {
-  background-color: var(--ls-secondary-background-color);
+  background-color: var(--ls-main-content-background);
 }
 
 /* Make "New page" button opaque */
@@ -212,7 +218,7 @@ html[data-theme=light] {
   color: inherit;
 }
 #main-content-container .color-level {
-  background-color: var(--color-level-1) !important;
+  background-color: var(--ct-color-level-1) !important;
 }
 
 /* Scrollbar style */
@@ -348,9 +354,6 @@ html[data-theme=light] .absolute-modal {
   border: 1px solid lightgray;
 }
 
-html[data-theme=dark] {
-  /* Theme selection */
-}
 html[data-theme=dark] .dropdown-wrapper a {
   opacity: 1 !important;
   color: var(--ls-primary-text-color);
@@ -372,6 +375,16 @@ html[data-theme=dark] .absolute-modal {
 }
 html[data-theme=dark] mark {
   background: #bfae3a !important;
+}
+html[data-theme=dark] .form-control textarea {
+  background-color: var(--ls-modal-panel-color, var(--lx-gray-04, var(--ls-secondary-background-color)));
+}
+html[data-theme=dark] .bg-popover {
+  background: var(--ls-secondary-background-color);
+  border-color: var(--ls-border-color);
+}
+html[data-theme=dark] .focus\:bg-accent:focus {
+  background-color: var(--ls-primary-background-color);
 }
 
 /* Journal calendar icons */
@@ -478,6 +491,12 @@ body:not(.is-banner-active) .is-journals h1.title::before {
 
 .ls-block :is(h1, h2, h3, h4, h5) {
   font-weight: 500;
+}
+
+.tippy-wrapper {
+  background-color: var(--ls-primary-background-color);
+  border: 1px solid var(--ls-border-color);
+  border-radius: 5px;
 }
 
 /* banners plugin */
