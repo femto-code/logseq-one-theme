@@ -356,6 +356,12 @@ body:not(.is-banner-active) .is-journals h1.title::before {
     font-weight: 500;
 }
 
+.tippy-wrapper {
+    background-color: var(--ls-primary-background-color);
+    border: 1px solid var(--ls-border-color);
+    border-radius: 5px;
+}
+
 /* banners plugin */
 body:is([data-page='page'], [data-page='home']).is-banner-active #banner {
     max-width: var(--ls-main-content-max-width);
