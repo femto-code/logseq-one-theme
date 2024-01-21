@@ -17,7 +17,7 @@
   <a href="#credits">🙏 Credits</a>
 </p>
 
-<p align="center">A clean theme for <a href="https://github.com/logseq/logseq">Logseq</a> inspired by One Dark Pro.<br><b>Including support for accent colors!</b></p>
+<p align="center">A clean theme for <a href="https://github.com/logseq/logseq">Logseq</a> inspired by One Dark Pro.<br><b>Including native accent color support!</b><br>Up-to-date and compatible to latest Logseq v0.10.5!</p>
 
 ## Screenshots
 ![](./preview.png)
@@ -68,12 +68,12 @@ The Logseq One Theme in its first iteration is strongly inspired by [logseq-atmo
 - Refactor: use standard Logseq variables to prevent redundant CSS rules
 </details>
 
-### Known issues (WIP) / Roadmap
+### Known issues / Roadmap
 
-- [ ] table styles
-- [ ] page tooltip layout
-- [ ] complete accent color support
-- [ ] dark theme: mixture of bold and italic styles (inconsistent colors)
+- [x] table styles
+- [x] page tooltip layout
+- [ ] complete accent color support (WIP)
+- [ ] dark theme: mixture of bold and italic styles (consistency)
 - [ ] light code mirror theme inconsistency
 
 ## Install
