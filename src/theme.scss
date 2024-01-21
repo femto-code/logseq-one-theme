@@ -247,6 +247,10 @@ html[data-theme="dark"] {
     mark {
         background: #bfae3a !important;
     }
+    // fix white background of textarea (e.g. in plugin settings)
+    .form-control textarea {
+        background-color: var(--ls-modal-panel-color, var(--lx-gray-04, var(--ls-secondary-background-color)));
+    }
 }
 
 /* Journal calendar icons */
