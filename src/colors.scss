@@ -101,6 +101,7 @@ html[data-theme="dark"] {
     --accent: 220deg 13.04% 18.04%;
 
     --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
+    --ct-color-level-1: #21252B;
     --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
 }
@@ -206,6 +207,7 @@ html[data-theme="light"] {
     --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
 
     --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
+    --ct-color-level-1: #eceded;
     --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
 }
