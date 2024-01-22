@@ -1496,7 +1496,7 @@ a.tooltip-priority {
 *******************************/
 :root {
   --ls-font-family: "Inter";
-  --ls-main-content-max-width: 940px;
+  --ls-main-content-max-width: 1000px;
   --ls-main-content-max-width-wide: 1280px;
   --ls-page-text-size: 1em;
   --ls-page-title-size: 26px;
