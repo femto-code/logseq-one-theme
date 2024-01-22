@@ -1,3 +1,11 @@
+## [0.1.2](https://github.com/femto-code/logseq-one-theme/compare/v0.1.1...v0.1.2) (2024-01-22)
+
+
+### Bug Fixes
+
+* **main content max width:** increase default container width on bigger screens ([339b98d](https://github.com/femto-code/logseq-one-theme/commit/339b98dd01bcdbc31a76755d8ad68529c58730d9))
+* **popup menu:** hover background ([73376ac](https://github.com/femto-code/logseq-one-theme/commit/73376acfcc8115f0d4b09365416171debeff37ae))
+
 ## [0.1.1](https://github.com/femto-code/logseq-one-theme/compare/v0.1.0...v0.1.1) (2024-01-21)
 
 
