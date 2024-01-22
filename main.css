@@ -35,6 +35,7 @@ html[data-theme=dark] {
   --ls-page-reference-block-hover-background: var(--ls-tertiary-background-color);
   --ls-dropdown-title-color: #869EE9;
   --ls-dropdown-title-background: #202124;
+  --lx-gray-03: #282C34;
   --lx-gray-05: #21252b;
   --ls-border-color: #32353b;
   --ls-secondary-border-color: #505255;
@@ -81,7 +82,6 @@ html[data-theme=dark] {
   --popover: 216deg 13.16% 14.9%;
   --border: 220deg 8.26% 21.37%;
   --accent: 220deg 13.04% 18.04%;
-  --lx-gray-03: var(--ls-secondary-background-color);
   --ct-color-level-1: #21252B;
   --primary: 225.45deg 69.23% 71.96%;
   --lx-accent-10: 225.45deg 69.23% 75%;
