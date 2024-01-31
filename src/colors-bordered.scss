@@ -2,6 +2,27 @@
 ********* Dark Theme ***********
 *******************************/
 
+:root {
+    --cp-darkest: #1D2025;
+    --cp-darker: #21252B;
+    --cp-dark: #252931;
+    --cp-gray: #282C34;
+    --cp-lighter: #32363e;
+    --cp-lightest: #5c6370;
+    --cp-beige: #CCCCCC;
+    --cp-darkblue: #528BFF;
+    --cp-darkred: #BE5046;
+    --cp-orange: #D19A66;
+    --cp-lightgray: #ABB2BF;
+    --cp-cyan: #56B6C2;
+    --cp-blue: #61AFEF;
+    --cp-magenta: #C678DD;
+    --cp-green: #98C379;
+    --cp-red: #E06C75;
+    --cp-yellow: #E5C07B;
+    --cp-white: #F1F2F4;
+}
+
 .dark-theme,
 html[data-theme="dark"] {
     
