@@ -371,6 +371,12 @@ body:not(.is-banner-active) .is-journals h1.title::before {
 }
 
 /* banners plugin */
+/* Plugin support: logseq-plugin-wrap */
+:root.dark {
+    --kef-wrap-tb-bg: #1d2025;
+}
+
+/* Plugin support: logseq-banners-plugin */
 body:is([data-page='page'], [data-page='home']).is-banner-active #banner {
     max-width: var(--ls-main-content-max-width);
     border-radius: 10px 10px 0 0;
