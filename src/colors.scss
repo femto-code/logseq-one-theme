@@ -2,35 +2,57 @@
 ********* Dark Theme ***********
 *******************************/
 
+:root {
+    --cp-darkest: #1D2025;
+    --cp-darker: #21252B;
+    --cp-dark: #252931;
+    --cp-gray: #282C34;
+    --cp-lighter: #32363e;
+    --cp-lightest: #5c6370;
+    --cp-beige: #CCCCCC;
+    --cp-darkblue: #528BFF;
+    --cp-darkred: #BE5046;
+    --cp-orange: #D19A66;
+    --cp-lightgray: #ABB2BF;
+    --cp-cyan: #56B6C2;
+    --cp-blue: #61AFEF;
+    --cp-magenta: #C678DD;
+    --cp-green: #98C379;
+    --cp-red: #E06C75;
+    --cp-yellow: #E5C07B;
+    --cp-white: #F1F2F4;
+    --cp-primary: #869EE9;
+}
+
 .dark-theme,
 html[data-theme="dark"] {
     
-    --ls-primary-background-color: #282C34;
-    --ls-secondary-background-color: #21252B;
-    --ls-tertiary-background-color: #1D2026;
-    --ls-quaternary-background-color: #1e2126;
+    --ls-primary-background-color: var(--cp-darker);
+    --ls-secondary-background-color: var(--cp-darkest); // color-level-1 / ls-menu-hover-color
+    --ls-tertiary-background-color: var(--cp-dark);
+    --ls-quaternary-background-color: var(--cp-gray);
 
-    --ls-top-bar-background: #21252B;
-    --ls-main-content-background: #21252B;
-    --ls-left-sidebar-background: #282C34;
+    --ls-top-bar-background: var(--cp-darker);
+    --ls-main-content-background: var(--cp-darker);
+    --ls-left-sidebar-background: var(--cp-darkest);
 
     --ls-scrollbar-foreground-color: #8a8a8a3d;
     --ls-scrollbar-background-color: #fff0;
     --ct-scrollbar-thumb-hover-color: #8a8a8a61;
 
-    --ls-menu-hover-color: #21252b;
-    --ls-a-chosen-bg: #21252b;
+    --ls-menu-hover-color: var(--cp-darker);
+    --ls-a-chosen-bg: var(--cp-darker);
 
-    --ls-title-text-color: #F1F2F4;
-    --ls-primary-text-color: #F1F2F4;
+    --ls-title-text-color: var(--cp-white);
+    --ls-primary-text-color: var(--cp-white);
     --ls-secondary-text-color: #F6F7F8;
-    --ls-tag-text-color: #869EE9;
+    --ls-tag-text-color: var(--cp-primary);
     --ls-tag-text-hover-color: #BECBF3;
-    --ls-link-text-color: #869EE9;
+    --ls-link-text-color: var(--cp-primary);
     --lx-accent-11: var(--ls-link-text-color);
     --ls-link-text-hover-color: var(--ls-link-text-color);
     --lx-accent-12: var(--ls-link-text-color);
-    // --ls-link-ref-text-color: #869EE9;
+    // --ls-link-ref-text-color: var(--cp-primary);
     --ls-link-ref-text-hover-color: var(--lx-accent-11);
     --lx-accent-03-alpha: #869ee923;
     --ls-anchor-link-text-color-hover: var(--lx-accent-11);
@@ -40,10 +62,11 @@ html[data-theme="dark"] {
     --ls-page-reference-hover-background: rgba(134, 158, 233, 0.137254902);
     --ls-page-reference-block-hover-background: var(--ls-tertiary-background-color);
 
-    --ls-dropdown-title-color: #869EE9;
+    --ls-dropdown-title-color: var(--cp-primary);
     --ls-dropdown-title-background: #202124;
-    --lx-gray-03: #282C34;
-    --lx-gray-05: #21252b; // --ls-settings-list-item-hover-background-color
+    --lx-gray-03: var(--cp-gray); // .menu-links-wrapper bg color (--ls-settings-dropdown-background) // TODO
+    // --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
+    --lx-gray-05: var(--cp-darker); // --ls-settings-list-item-hover-background-color
     
     --ls-border-color: #32353b; // #181B20
     --ls-secondary-border-color: #505255;
@@ -54,28 +77,28 @@ html[data-theme="dark"] {
     --ls-icon-color: #767676;
     --ls-search-icon-color: var(--ls-quaternary-background-color);
     --ls-header-button-text-color: #999;
-    --ls-header-button-text-color-hover: #f1f2f4;
+    --ls-header-button-text-color-hover: var(--cp-white);
     --ls-header-button-background: var(--ls-secondary-background-color);
     --ls-header-button-hover: #1D2026;
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
     --ls-left-sidebar-active-background: #393e47;
     --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
     --ls-right-sidebar-content-background: var(--ls-primary-background-color);
-    --ls-right-ridebar-color: #21252B; // right sidebar background
+    --ls-right-ridebar-color: var(--cp-darker); // right sidebar background
 
     --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
 
-    --ls-page-properties-background-color: #21252B;
-    --ls-block-properties-background-color: #21252B;
+    --ls-page-properties-background-color: var(--cp-darkest);
+    --ls-block-properties-background-color: var(--cp-darkest);
 
-    --ls-page-inline-code-color: #F1F2F4;
-    --ls-page-inline-code-bg-color: #21252B;
+    --ls-page-inline-code-color: var(--cp-white);
+    --ls-page-inline-code-bg-color: var(--cp-darker);
 
-    --ls-page-blockquote-color: #F1F2F4;
-    --ls-page-blockquote-bg-color: #21252B;
+    --ls-page-blockquote-color: var(--cp-white);
+    --ls-page-blockquote-bg-color: #1a1c21;
     --ls-page-blockquote-border-color: #495162;
 
-    --ls-page-mark-color: #282C34;
+    --ls-page-mark-color: var(--cp-gray);
     --ls-page-mark-bg-color: #bfae3a;
 
     --ls-selection-background-color: #495162;
@@ -84,7 +107,7 @@ html[data-theme="dark"] {
     --ls-block-bullet-color: #495162;
     --ls-block-bullet-active-color: var(--ls-link-text-color);
     --ls-block-bullet-border-color: #495162;
-    --ls-guideline-color: #495162;
+    --ls-guideline-color: var(--cp-lighter); // #495162
     --ls-guideline-hover-color: var(--ls-tag-text-hover-color);
 
     --ct-bold-color: #ffb86c;
@@ -98,12 +121,12 @@ html[data-theme="dark"] {
     --border: 220deg 8.26% 21.37%;
     --accent: 220deg 13.04% 18.04%;
 
-    // --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
-    --ct-color-level-1: #21252B;
+    --ct-color-level-1: var(--cp-darkest);
     --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
+    --secondary: 225.33deg 26.63% 41.16%; // hover bg color for "Marketplace" button
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
 
-    --ct-cm-bg: var(--cp-dark);
+    --ct-cm-bg: var(--cp-dark); // codemirror bg color
 }
 
 /* *****************************
@@ -118,8 +141,8 @@ html[data-theme="light"] {
     --ls-tertiary-background-color: #e1e2e5; // used for backlink ref background shading #D3D6DF
     --ls-quaternary-background-color: #d8d9db; // #cbcdd5
 
-    --ls-top-bar-background: #E2E4E9;
-    --ls-main-content-background: #E2E4E9;
+    --ls-top-bar-background: #F1F2F4;
+    --ls-main-content-background: #F1F2F4;
 
     --ls-scrollbar-foreground-color: #00000014;
     --ls-scrollbar-background-color: #fff0;
@@ -131,13 +154,13 @@ html[data-theme="light"] {
     --ls-title-text-color: #282C34;
     --ls-primary-text-color: #282C34;
     --ls-secondary-text-color: #282C34;
-    --ls-tag-text-color: #869EE9;
+    --ls-tag-text-color: var(--cp-primary);
     --ls-tag-text-hover-color: #BECBF3;
-    --ls-link-text-color: #869EE9;
+    --ls-link-text-color: var(--cp-primary);
     --lx-accent-11: var(--ls-link-text-color);
     --ls-link-text-hover-color: var(--ls-link-text-color);
     --lx-accent-12: var(--ls-link-text-color);
-    // --ls-link-ref-text-color: #869EE9;
+    // --ls-link-ref-text-color: var(--cp-primary);
     --ls-link-ref-text-hover-color: var(--lx-accent-11);
     --lx-accent-03-alpha: #869ee923;
     --ls-anchor-link-text-color-hover: var(--lx-accent-11);
@@ -147,7 +170,7 @@ html[data-theme="light"] {
     --ls-page-reference-hover-background: var(--ls-secondary-background-color);
     --ls-page-reference-block-hover-background: var(--ls-quaternary-background-color);
     
-    --ls-dropdown-title-color: #869EE9;
+    --ls-dropdown-title-color: var(--cp-primary);
     --ls-dropdown-title-background: #f1f2f4;
     // --ls-settings-list-item-hover-background-color: #E2E4E9;
     --lx-gray-05: #E2E4E9;
@@ -165,9 +188,8 @@ html[data-theme="light"] {
     --ls-header-button-text-color-hover: #282c34;
     --ls-header-button-background: var(--ls-secondary-background-color);
     --ls-header-button-hover: #D3D6DF;
-    --ls-left-sidebar-background: #f7f7f7;
-    --ls-left-sidebar-border-color: #D3D6DF;
-    --ls-left-sidebar-hover-background: #ebebeb;
+    --ls-left-sidebar-background: #f7f7f7; // --lx-gray-02
+    --ls-left-sidebar-border-color: #D3D6DF; // --lx-gray-03
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
     --ls-right-sidebar-content-background: var(--ls-primary-background-color);
     --ls-right-ridebar-color: #E2E4E9;
@@ -204,6 +226,7 @@ html[data-theme="light"] {
     --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
 
     --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
+    --lx-gray-04: var(--ls-tertiary-background-color); // left sidebar hovers
     --ct-color-level-1: #eceded;
     --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
