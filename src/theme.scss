@@ -190,6 +190,11 @@ html ::-webkit-scrollbar-thumb:hover {
         font-size: 1em;
         font-weight: 500;
     }
+    // Cards
+    div[data-refs-self*='"card"'] {
+        border: 1px solid var(--ls-border-color);
+        margin-left: 5px;
+    }
 }
 
 html[data-theme="light"] {
