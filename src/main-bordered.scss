@@ -13,6 +13,12 @@
     --ls-block-bullet-threading-width-overwrite: 2px;
     --ls-block-bullet-active-color-overwrite: var(--ls-link-text-color);
     --code-font-family: "Hack", monospace;
+    --ct-h1-color: #9FCCB3;
+    --ct-h1-border: 2px solid var(--ct-h1-color);
+    --ct-h2-color: #E1B493;
+    --ct-h2-border: 2px solid var(--ct-h2-color);
+    --ct-h3-color: #DDA6E0;
+    --ct-h3-border: 2px solid var(--ct-h3-color);
 }
 
 @import 'colors-bordered.scss'; // import colors for theme layout option "bordered"

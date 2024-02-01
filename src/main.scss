@@ -1,12 +1,3 @@
-@import 'colors.scss';
-@import 'theme.scss';
-@import 'code-mirror.scss';
-@import 'block-refs.scss';
-@import 'header-labels.scss';
-@import 'tasks.scss';
-@import 'admonition-blocks.scss';
-@import 'page-prop-icons.scss';
-
 /* ****************************
 ************** Root ***********
 *******************************/
@@ -22,4 +13,19 @@
     --ls-block-bullet-threading-width-overwrite: 2px;
     --ls-block-bullet-active-color-overwrite: var(--ls-link-text-color);
     --code-font-family: "Hack", monospace;
+    --ct-h1-color: #9FCCB3;
+    --ct-h1-border: 1px solid var(--ls-border-color);
+    --ct-h2-color: #E1B493;
+    --ct-h2-border: 1px solid var(--ls-border-color);
+    --ct-h3-color: #DDA6E0;
+    --ct-h3-border: 1px solid var(--ls-border-color);
 }
+
+@import 'colors.scss';
+@import 'theme.scss';
+@import 'code-mirror.scss';
+@import 'block-refs.scss';
+@import 'header-labels.scss';
+@import 'tasks.scss';
+@import 'admonition-blocks.scss';
+@import 'page-prop-icons.scss';

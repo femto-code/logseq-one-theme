@@ -308,7 +308,7 @@ body:not(.is-banner-active) .is-journals h1.title::before {
     margin: 0;
     font-size: 1.8em;
     letter-spacing: -1px;
-    border-bottom: 2px solid var(--ct-h1-color) !important;
+    border-bottom: var(--ct-h1-border)!important;
     padding-left: 0.2rem;
     color: var(--ct-h1-color);
 }
@@ -317,7 +317,7 @@ body:not(.is-banner-active) .is-journals h1.title::before {
 .editor-inner :is(.h2) {
     margin: 0;
     letter-spacing: -1px;
-    border-bottom: 2px solid var(--ct-h2-color) !important;
+    border-bottom: var(--ct-h2-border)!important;
     padding-right: 6rem;
     padding-left: 0.2rem;
     color: var(--ct-h2-color);
@@ -327,7 +327,7 @@ body:not(.is-banner-active) .is-journals h1.title::before {
     margin: 0;
     letter-spacing: -1px;
     max-width: max-content;
-    border-bottom: 2px solid var(--ct-h2-color) !important;
+    border-bottom: var(--ct-h2-border)!important;
     padding-right: 6rem;
     padding-left: 0.2rem;
     color: var(--ct-h2-color);
@@ -337,7 +337,7 @@ body:not(.is-banner-active) .is-journals h1.title::before {
 .editor-inner :is(.h3) {
     font-size: 1.27em;
     min-height: 1.27em;
-    border-bottom: 2px solid var(--ct-h3-color) !important;
+    border-bottom: var(--ct-h3-border)!important;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
     color: var(--ct-h3-color);
@@ -347,7 +347,7 @@ body:not(.is-banner-active) .is-journals h1.title::before {
     font-size: 1.27em;
     min-height: 1.27em;
     max-width: max-content;
-    border-bottom: 2px solid var(--ct-h3-color) !important;
+    border-bottom: var(--ct-h3-border)!important;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
     color: var(--ct-h3-color);
