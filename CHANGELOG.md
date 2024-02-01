@@ -1,3 +1,18 @@
+# [0.2.0](https://github.com/femto-code/logseq-one-theme/compare/v0.1.2...v0.2.0) (2024-02-01)
+
+
+### Bug Fixes
+
+* **block ref:** hide bottom borders of referenced headings ([6ff7b60](https://github.com/femto-code/logseq-one-theme/commit/6ff7b60a6686155adb29a99b3b72af94aeeb0952))
+* **help menu popup:** fix background color in light mode ([6c0a39e](https://github.com/femto-code/logseq-one-theme/commit/6c0a39ef23303f52e70e7b5b21d618918ebec758))
+
+
+### Features
+
+* **cards:** added improved layout for better recognition ([c9f8bde](https://github.com/femto-code/logseq-one-theme/commit/c9f8bde14f11b9f9b7153166acbdf9c2bd0ea683))
+* **configurable header style:** color and underlines of headings are now easily configurable ([7dc80ae](https://github.com/femto-code/logseq-one-theme/commit/7dc80ae26b01158560795ceef5485dfd98ab8fb1))
+* **new theme variant:** same as One Theme, without the borders and slightly changed color choices for a less distracting writing experience ([9db2e5c](https://github.com/femto-code/logseq-one-theme/commit/9db2e5cb9f8e1640c8121ede58ec65ed7683404f))
+
 ## [0.1.2](https://github.com/femto-code/logseq-one-theme/compare/v0.1.1...v0.1.2) (2024-01-22)
 
 
