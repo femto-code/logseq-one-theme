@@ -105,6 +105,8 @@ html[data-theme="dark"] {
     --ct-color-level-1: #21252B;
     --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
+
+    --ct-cm-bg: var(--cp-dark);
 }
 
 /* *****************************

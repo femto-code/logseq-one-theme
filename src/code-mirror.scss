@@ -196,18 +196,18 @@ html[data-theme="light"] {
 html[data-theme="dark"] {
 
     [class*="cm-s-"].CodeMirror {
-        background-color: #21252B;
+        background-color: var(--ct-cm-bg);
         color: #8E95B4;
         line-height: 1.8;
         border-radius: 10px;
     }
 
     .cm-s-solarized.cm-s-dark .CodeMirror-gutters {
-        background-color: #21252B !important;
+        background-color: var(--ct-cm-bg) !important;
     }
 
     [class*="cm-s-"] .CodeMirror-gutters {
-        background-color: #21252B !important;
+        background-color: var(--ct-cm-bg) !important;
         color: #ABB2BF;
         border: none;
     }
@@ -228,12 +228,12 @@ html[data-theme="dark"] {
 
     [class*="cm-s-"] .CodeMirror-line::selection,
     [class*="cm-s-"] .CodeMirror-line>span::selection {
-        background: #21252B;
+        background: var(--ct-cm-bg);
     }
 
     [class*="cm-s-"] .CodeMirror-line::-moz-selection,
     [class*="cm-s-"] .CodeMirror-line>span::-moz-selection {
-        background: #21252B;
+        background: var(--ct-cm-bg);
     }
 
     [class*="cm-s-"] .CodeMirror-activeline-background {
