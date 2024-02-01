@@ -9,14 +9,20 @@
 				"name": "One Theme",
 				"url": "./main.css",
 				"description": "A clean theme inspired by One Dark Pro."
+			},
+			{
+				"name": "One Theme (without borders)",
+				"url": "./main2.css",
+				"description": "Same as One Theme, without the borders and slightly changed color choices for a less distracting writing experience."
 			}
 		],
 		"id": "logseq-one-theme",
 		"icon": "./icon.png"
 	},
 	"scripts": {
-		"build:main": "npx sass src/main.scss main.css --no-source-map",
-		"build": "npm run build:main"
+		"build:main": "npx sass src/main-bordered.scss main.css --no-source-map",
+		"build": "npm run build:main",
+		"build:v2": "npx sass src/main.scss main2.css --no-source-map"
 	},
 	"devDependencies": {
 		"sass": "^1.70.0",

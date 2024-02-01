@@ -1,0 +1,46 @@
+/* ****************************
+************** Root ***********
+*******************************/
+
+:root {
+    --ls-font-family: "Inter";
+    --ls-main-content-max-width: 1000px;
+    --ls-main-content-max-width-wide: 1280px;
+    --ls-page-text-size: 1em;
+    --ls-page-title-size: 26px;
+    --ls-tag-text-opacity: 0.8;
+    --ls-tag-text-hover-opacity: 1;
+    --ls-block-bullet-threading-width-overwrite: 2px;
+    --ls-block-bullet-active-color-overwrite: var(--ls-link-text-color);
+    --code-font-family: "Hack", monospace;
+}
+
+@import 'colors-bordered.scss'; // import colors for theme layout option "bordered"
+@import 'theme.scss';
+@import 'code-mirror.scss';
+@import 'block-refs.scss';
+@import 'header-labels.scss';
+@import 'tasks.scss';
+@import 'admonition-blocks.scss';
+@import 'page-prop-icons.scss';
+
+#main-content-container {
+    .cp__sidebar-main-content {
+        background-color: var(--ls-primary-background-color);
+        box-shadow: rgba(0, 0, 0, 0.1) 0 4px 10px 4px;
+    }
+}
+.content {
+    .references-blocks-item {
+        background-color: var(--color-level-1);
+    }
+}
+/* Plugin support: logseq-banners-plugin */
+body:is([data-page='page'], [data-page='home']).is-banner-active #banner {
+    border-radius: 10px 10px 0 0;
+}
+body:is([data-page='page'], [data-page='home']).is-banner-active .cp__sidebar-main-content {
+    position: relative;
+    margin: 0 auto;
+    border-radius: 0 0 10px 10px !important;
+}
