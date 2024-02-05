@@ -144,8 +144,9 @@ html[data-theme="light"] {
     --ls-top-bar-background: #F1F2F4;
     --ls-main-content-background: #F1F2F4;
 
-    --ls-scrollbar-foreground-color: #00000014;
-    --ls-scrollbar-background-color: #fff0;
+    --ls-scrollbar-foreground-color: #00000021;
+    --ls-scrollbar-background-color: var(--ls-main-content-background);
+    --ls-scrollbar-color: var(--ls-main-content-background);
     --ct-scrollbar-thumb-hover-color: #8a8a8a61;
 
     --ls-menu-hover-color: #E2E4E9;
