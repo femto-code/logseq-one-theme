@@ -141,8 +141,9 @@ html[data-theme=light] {
   --ls-quaternary-background-color: #d8d9db;
   --ls-top-bar-background: #F1F2F4;
   --ls-main-content-background: #F1F2F4;
-  --ls-scrollbar-foreground-color: #00000014;
-  --ls-scrollbar-background-color: #fff0;
+  --ls-scrollbar-foreground-color: #00000021;
+  --ls-scrollbar-background-color: var(--ls-main-content-background);
+  --ls-scrollbar-color: var(--ls-main-content-background);
   --ct-scrollbar-thumb-hover-color: #8a8a8a61;
   --ls-menu-hover-color: #E2E4E9;
   --ls-a-chosen-bg: #E2E4E9;
@@ -161,13 +162,10 @@ html[data-theme=light] {
   --ls-block-ref-link-text-color: var(--ls-secondary-text-color);
   --ls-page-ref-text-color: var(--ls-link-ref-text-color);
   --ls-page-ref-text-color-hover: var(--ls-link-ref-text-color);
-  --ls-page-reference-hover-background: var(--ls-secondary-background-color);
-  --ls-page-reference-block-hover-background: var(--ls-quaternary-background-color);
+  --lx-accent-04-alpha: rgb(134 158 233 / 20%);
   --ls-dropdown-title-color: var(--cp-primary);
   --ls-dropdown-title-background: #f1f2f4;
   --lx-gray-05: #E2E4E9;
-  --ls-settings-dropdown-background: #F1F2F4;
-  --ls-settings-dropdown-link-item-background: #F1F2F4;
   --ls-modal-panel-color: #F1F2F4;
   --ls-border-color: #D3D6DF;
   --ls-secondary-border-color: #e2e2e2;
@@ -179,11 +177,12 @@ html[data-theme=light] {
   --ls-header-button-text-color-hover: #282c34;
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-header-button-hover: #D3D6DF;
-  --ls-left-sidebar-background: #f7f7f7;
+  --lx-gray-02: #f7f7f7;
   --ls-left-sidebar-border-color: #D3D6DF;
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
   --ls-right-sidebar-content-background: var(--ls-primary-background-color);
-  --ls-right-ridebar-color: #E2E4E9;
+  --lx-gray-01: var(--ls-main-content-background);
+  --ls-right-ridebar-color: var(--ls-main-content-background);
   --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
   --ls-page-properties-background-color: #E2E4E9;
   --ls-block-properties-background-color: #E2E4E9;
@@ -206,10 +205,11 @@ html[data-theme=light] {
   --box-shadow-sm: rgba(171, 171, 171, 0.1) 0 2px 3px 0;
   --block-ref-bg: hsla(0, 0%, 40%, .1);
   --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
-  --lx-gray-03: var(--ls-secondary-background-color);
+  --lx-gray-03: #F7F7F7;
   --lx-gray-04: var(--ls-tertiary-background-color);
   --ct-color-level-1: #eceded;
-  --primary: 225.45deg 69.23% 71.96%;
+  --primary: 225.45deg 69.23% 72%;
+  --secondary: 225deg 100% 91%;
   --lx-accent-10: 225.45deg 69.23% 75%;
 }
 

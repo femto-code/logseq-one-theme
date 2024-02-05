@@ -55,7 +55,8 @@ html[data-theme=dark] {
   --ls-main-content-background: #21252B;
   --ls-left-sidebar-background: #282C34;
   --ls-scrollbar-foreground-color: #8a8a8a3d;
-  --ls-scrollbar-background-color: #fff0;
+  --ls-scrollbar-background-color: var(--ls-main-content-background);
+  --ls-scrollbar-color: var(--ls-main-content-background);
   --ct-scrollbar-thumb-hover-color: #8a8a8a61;
   --ls-menu-hover-color: #21252b;
   --ls-a-chosen-bg: #21252b;
