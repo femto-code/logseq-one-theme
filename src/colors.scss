@@ -173,10 +173,7 @@ html[data-theme="light"] {
     
     --ls-dropdown-title-color: var(--cp-primary);
     --ls-dropdown-title-background: #f1f2f4;
-    // --ls-settings-list-item-hover-background-color: #E2E4E9;
-    --lx-gray-05: #E2E4E9;
-    --ls-settings-dropdown-background: #F1F2F4;
-    --ls-settings-dropdown-link-item-background: #F1F2F4;
+    --lx-gray-05: #E2E4E9; // --ls-settings-list-item-hover-background-color
     --ls-modal-panel-color: #F1F2F4;
     
     --ls-border-color: #D3D6DF;
@@ -226,8 +223,8 @@ html[data-theme="light"] {
     --block-ref-bg: hsla(0, 0%, 40%, .1);
     --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
 
-    --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
     --lx-gray-04: var(--ls-tertiary-background-color); // left sidebar hovers
+    --lx-gray-03: #F7F7F7; // .references-blocks-item, #create-button, --ls-settings-dropdown-background
     --ct-color-level-1: #eceded;
     --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
