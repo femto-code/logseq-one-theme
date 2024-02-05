@@ -49,7 +49,7 @@ html[data-theme="dark"] {
     --ls-tag-text-color: var(--cp-primary);
     --ls-tag-text-hover-color: #BECBF3;
     --ls-link-text-color: var(--cp-primary);
-    --lx-accent-11: var(--ls-link-text-color);
+    --lx-accent-11: var(--ls-link-text-color); // --ls-link-ref-text-color .page-ref color
     --ls-link-text-hover-color: var(--ls-link-text-color);
     --lx-accent-12: var(--ls-link-text-color);
     // --ls-link-ref-text-color: var(--cp-primary);
@@ -138,7 +138,7 @@ html[data-theme="light"] {
 
     --ls-primary-background-color: #F1F2F4;
     --ls-secondary-background-color: #E2E4E9;
-    --ls-tertiary-background-color: #e1e2e5; // used for backlink ref background shading #D3D6DF
+    --ls-tertiary-background-color: #e1e2e5; // #D3D6DF .cp__plugins-item-card bg
     --ls-quaternary-background-color: #d8d9db; // #cbcdd5
 
     --ls-top-bar-background: #F1F2F4;
@@ -158,18 +158,17 @@ html[data-theme="light"] {
     --ls-tag-text-color: var(--cp-primary);
     --ls-tag-text-hover-color: #BECBF3;
     --ls-link-text-color: var(--cp-primary);
-    --lx-accent-11: var(--ls-link-text-color);
+    --lx-accent-11: var(--ls-link-text-color); // a, a.tag
     --ls-link-text-hover-color: var(--ls-link-text-color);
     --lx-accent-12: var(--ls-link-text-color);
-    // --ls-link-ref-text-color: var(--cp-primary);
+    // --ls-link-ref-text-color: var(--cp-primary); // defaults to --ls-link-text-color
     --ls-link-ref-text-hover-color: var(--lx-accent-11);
     --lx-accent-03-alpha: #869ee923;
     --ls-anchor-link-text-color-hover: var(--lx-accent-11);
     --ls-block-ref-link-text-color: var(--ls-secondary-text-color);
     --ls-page-ref-text-color: var(--ls-link-ref-text-color);
     --ls-page-ref-text-color-hover: var(--ls-link-ref-text-color);
-    --ls-page-reference-hover-background: var(--ls-secondary-background-color);
-    --ls-page-reference-block-hover-background: var(--ls-quaternary-background-color);
+    --lx-accent-04-alpha: rgb(134 158 233 / 20%); // --ls-page-reference-hover-background, --ls-page-reference-block-hover-background
     
     --ls-dropdown-title-color: var(--cp-primary);
     --ls-dropdown-title-background: #f1f2f4;
@@ -178,7 +177,7 @@ html[data-theme="light"] {
     
     --ls-border-color: #D3D6DF;
     --ls-secondary-border-color: #e2e2e2;
-    --ls-tertiary-border-color: #D3D6DF;
+    --ls-tertiary-border-color: #D3D6DF; // .left-sidebar-inner .nav-contents-container.is-scrolled
     --color-level-4: #b7b7b7;
     --color-level-5: #2A2F37;
     --ls-icon-color: #919191;
@@ -186,11 +185,12 @@ html[data-theme="light"] {
     --ls-header-button-text-color-hover: #282c34;
     --ls-header-button-background: var(--ls-secondary-background-color);
     --ls-header-button-hover: #D3D6DF;
-    --ls-left-sidebar-background: #f7f7f7; // --lx-gray-02
-    --ls-left-sidebar-border-color: #D3D6DF; // --lx-gray-03
+    --lx-gray-02: #f7f7f7; // --ls-left-sidebar-background, search dialog input bg
+    --ls-left-sidebar-border-color: #D3D6DF; // --lx-gray-03, override for now for better looking
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
     --ls-right-sidebar-content-background: var(--ls-primary-background-color);
-    --ls-right-ridebar-color: #E2E4E9;
+    --lx-gray-01: var(--ls-main-content-background); // --ls-right-ridebar-color
+    --ls-right-ridebar-color: var(--ls-main-content-background); // override for now, for better looking (might be deprecated soon)
 
     --ls-table-tr-even-background-color: var(--ls-secondary-background-color);
 
@@ -223,8 +223,8 @@ html[data-theme="light"] {
     --block-ref-bg: hsla(0, 0%, 40%, .1);
     --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
 
-    --lx-gray-04: var(--ls-tertiary-background-color); // left sidebar hovers
     --lx-gray-03: #F7F7F7; // .references-blocks-item, #create-button, --ls-settings-dropdown-background
+    --lx-gray-04: var(--ls-tertiary-background-color); // left sidebar hovers, --ls-modal-panel-color (defined above, overwrites)
     --ct-color-level-1: #eceded;
     --primary: 225.45deg 69.23% 72%; // e.g. used for button bg in settings
     --secondary: 225deg 100% 91%;
