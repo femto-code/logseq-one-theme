@@ -234,6 +234,7 @@ html[data-theme="light"] {
 
     --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
     --ct-color-level-1: #eceded;
-    --primary: 225.45deg 69.23% 71.96%; // e.g. used for button bg in settings
+    --primary: 225.45deg 69.23% 72%; // e.g. used for button bg in settings
+    --secondary: 225deg 100% 91%;
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
 }
