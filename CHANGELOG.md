@@ -1,3 +1,13 @@
+## [0.2.1](https://github.com/femto-code/logseq-one-theme/compare/v0.2.0...v0.2.1) (2024-02-05)
+
+
+### Bug Fixes
+
+* **light theme v2:** menu dropdown / popup background color ([7d16af2](https://github.com/femto-code/logseq-one-theme/commit/7d16af2d04352da6536a9b19ac15078ca4f1730e))
+* **light theme:** define secondary color variable ([1d61e5a](https://github.com/femto-code/logseq-one-theme/commit/1d61e5a819cdb30519671c939164cae2b30ffb02))
+* **light theme:** further improved compatibility with accent colors through better use of newly introduced Logseq variables ([9e0d38b](https://github.com/femto-code/logseq-one-theme/commit/9e0d38b352c944d34af57d261ca3308be819c4b0))
+* **light theme:** scrollbar background color ([578062e](https://github.com/femto-code/logseq-one-theme/commit/578062e2216e39f3f69bd0e65c32a3df8c9cb299))
+
 # [0.2.0](https://github.com/femto-code/logseq-one-theme/compare/v0.1.2...v0.2.0) (2024-02-01)
 
 
