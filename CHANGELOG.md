@@ -1,3 +1,12 @@
+## [0.2.3](https://github.com/femto-code/logseq-one-theme/compare/v0.2.2...v0.2.3) (2024-03-04)
+
+
+### Bug Fixes
+
+* **bordered layout:** recover background colors ([336797d](https://github.com/femto-code/logseq-one-theme/commit/336797d6bc9179ca71e5d2b17d13f65cbd4569db))
+* hover and popover colors for further compatibility with Logseq v0.10.7 ([3dcb997](https://github.com/femto-code/logseq-one-theme/commit/3dcb99788a335d45a8c4ca159b00d12710fc5a22))
+* margins too wide on smaller devices ([3cc0666](https://github.com/femto-code/logseq-one-theme/commit/3cc0666bda2fe22c76b96f3da9a5397735bac198)), closes [#1](https://github.com/femto-code/logseq-one-theme/issues/1)
+
 ## [0.2.2](https://github.com/femto-code/logseq-one-theme/compare/v0.2.1...v0.2.2) (2024-03-04)
 
 
