@@ -235,6 +235,9 @@ html[data-theme="light"] {
     .cp__sidebar-help-menu-popup {
         background-color: var(--ls-primary-background-color);
     }
+    #right-sidebar-container {
+        background: #F1F2F4;
+    }
 }
 
 html[data-theme="dark"] {
