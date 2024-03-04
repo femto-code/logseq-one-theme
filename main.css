@@ -1572,11 +1572,9 @@ body:is([data-page=page], [data-page=home]).is-banner-active .cp__sidebar-main-c
 html[data-theme=dark] .datepicker {
   background-color: var(--ls-primary-background-color);
 }
-
-#main-container, #app-container {
+html[data-theme=dark] #main-container, html[data-theme=dark] #app-container {
   background-color: #21252B !important;
 }
-
-.dark .left-sidebar-inner {
+html[data-theme=dark] .left-sidebar-inner {
   background: #282C34;
 }
