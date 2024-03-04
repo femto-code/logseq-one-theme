@@ -82,7 +82,7 @@ html[data-theme="dark"] {
     --lx-gray-12: var(--cp-white);
     --ls-header-button-background: var(--ls-secondary-background-color);
     --ls-header-button-hover: #1D2026; // removed since v0.10.7 -> instead: --lx-gray-04
-    --lx-gray-04: #1D2026;
+    --lx-gray-04: #282C34;
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
     --ls-left-sidebar-active-background: #393e47;
     --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
@@ -119,8 +119,8 @@ html[data-theme="dark"] {
     --block-ref-bg: rgb(86 90 122 / 40%);
     --block-ref-bg-hv: rgb(86 90 122 / 50%);
 
-    --popover: 216deg 13.16% 14.9%;
-    --lx-popover-bg: hsl(var(--popover)); // new in v0.10.7
+    --popover: 216deg 13.16% 14.9%; // still valid?
+    --lx-popover-bg: var(--lx-gray-03); // new in v0.10.7
     --border: 220deg 8.26% 21.37%;
     --accent: 220deg 13.04% 18.04%;
 
