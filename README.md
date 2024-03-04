@@ -19,9 +19,10 @@
 
 <p align="center">A clean theme for <a href="https://github.com/logseq/logseq">Logseq</a> inspired by One Dark Pro.<br>Tested with Logseq up to v0.10.7!</p>
 
-## Accent color not supported (currently)
+## Accent colors not fully supported (yet)
 
-Starting with Logseq `v0.10.7`: For correct theme display, please disable the accent color!
+For best experience, please disable the accent color!
+<small>Tests have shown that the first accent color option (Logseq classical color) breaks the layout and colors!</small>
 
 ![](./accent.png)
 
