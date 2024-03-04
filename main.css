@@ -90,9 +90,12 @@ html[data-theme=dark] {
   --ls-icon-color: #767676;
   --ls-search-icon-color: var(--ls-quaternary-background-color);
   --ls-header-button-text-color: #999;
+  --lx-gray-11: #999;
   --ls-header-button-text-color-hover: #f1f2f4;
+  --lx-gray-12: #f1f2f4;
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-header-button-hover: #1D2026;
+  --lx-gray-04: #1D2026;
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
   --ls-left-sidebar-active-background: #393e47;
   --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
@@ -124,6 +127,7 @@ html[data-theme=dark] {
   --block-ref-bg: rgb(86 90 122 / 40%);
   --block-ref-bg-hv: rgb(86 90 122 / 50%);
   --popover: 216deg 13.16% 14.9%;
+  --lx-popover-bg: hsl(var(--popover));
   --border: 220deg 8.26% 21.37%;
   --accent: 220deg 13.04% 18.04%;
   --ct-color-level-1: #21252B;
@@ -381,6 +385,7 @@ html ::-webkit-scrollbar-thumb:hover {
 .content div[data-refs-self*='"card"'] {
   border: 1px solid var(--ls-border-color);
   margin-left: 5px;
+  margin-top: 5px;
 }
 
 html[data-theme=light] {
