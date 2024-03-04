@@ -125,7 +125,7 @@ html[data-theme="dark"] {
     --popover: 216deg 13.16% 14.9%;
     --lx-popover-bg: var(--lx-gray-03);
     --border: 220deg 8.26% 21.37%;
-    --accent: 220deg 13.04% 18.04%;
+    --accent: 225.45deg 69.23% 71.96%;
 
     // --lx-gray-03: var(--ls-secondary-background-color); // .references-blocks-item, #create-button
     --ct-color-level-1: #21252B;
@@ -240,6 +240,7 @@ html[data-theme="light"] {
     --block-ref-bg: hsla(0, 0%, 40%, .1);
     --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
 
+    --accent: 225.45deg 69.23% 71.96%;
     --lx-gray-03: #F7F7F7;
     --lx-popover-bg: var(--lx-gray-03);
     --ct-color-level-1: #eceded;

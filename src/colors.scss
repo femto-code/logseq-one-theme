@@ -122,7 +122,7 @@ html[data-theme="dark"] {
     --popover: 216deg 13.16% 14.9%; // still valid?
     --lx-popover-bg: var(--lx-gray-03); // new in v0.10.7
     --border: 220deg 8.26% 21.37%;
-    --accent: 220deg 13.04% 18.04%;
+    --accent: 225.45deg 69.23% 71.96%;
 
     --ct-color-level-1: var(--cp-darkest);
     --primary: 225.45deg 69.23% 72%; // e.g. used for button bg in settings
@@ -228,6 +228,7 @@ html[data-theme="light"] {
     --block-ref-bg: hsla(0, 0%, 40%, .1);
     --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
 
+    --accent: 225.45deg 69.23% 71.96%;
     --lx-gray-03: #F7F7F7; // .references-blocks-item, #create-button, --ls-settings-dropdown-background
     --lx-popover-bg: var(--lx-gray-03);
     --lx-gray-04: var(--ls-tertiary-background-color); // left sidebar hovers, --ls-modal-panel-color (defined above, overwrites)
