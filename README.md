@@ -17,7 +17,7 @@
   <a href="#credits">🙏 Credits</a>
 </p>
 
-<p align="center">A clean theme for <a href="https://github.com/logseq/logseq">Logseq</a> inspired by One Dark Pro.<br><b>Supports native accent colors!</b><br>Up-to-date and compatible to latest Logseq v0.10.5!</p>
+<p align="center">A clean theme for <a href="https://github.com/logseq/logseq">Logseq</a> inspired by One Dark Pro.<br><b>Supports native accent colors!</b><br>Tested with Logseq up to v0.10.7!</p>
 
 ## Screenshots
 ![](./preview.png)
@@ -37,6 +37,7 @@
 - integrated support for banners plugin
 - support for new accent color selection (introduced in Logseq v0.10.0)
 - numerous improvements & fixes to color scheme and polished header styles (compared to original Atmos theme)
+- support for mobile devices (see below for instructions) (WIP)
 
 ### Inspired by: Atmos Theme
 
@@ -75,18 +76,36 @@ The Logseq One Theme in its first iteration is strongly inspired by [logseq-atmo
 - [ ] complete accent color support (WIP)
 - [ ] dark theme: mixture of bold and italic styles (consistency)
 - [ ] light code mirror theme inconsistency
+- [ ] improve mobile support
 
 ## Install
 
-### Official marketplace
+### Official marketplace (within Logseq, recommended)
 
 Find the One Theme in the Logseq in-app theme marketplace:
-- Search for 'One Theme' in `Menu` → `Plugins` → `Marketplace` → `Themes`
-- To select theme: `Menu` → `Themes` (or press `t` `i`)
+- Search for 'One Theme' in `«...»` → `Plugins` → `Marketplace` → `Themes`
+- To select theme: `«...»` → `Themes` (or press `t` `i`) → select desired variant 'One Theme'
+  - press `t` `t` to toggle between light and dark themes
 
-### Manual installation
+### Manual installation (and for mobile devices)
 
-Copy `main.css` [contents](https://raw.githubusercontent.com/femto-code/logseq-one-theme/master/main.css) into `<graph_base>/logseq/custom.css`
+1. Open `«...»` → `Settings`
+2. Select `Edit custom.css`
+3. Insert the following code to the top of your `custom.css`:
+  ```css
+  @import url("https://raw.githubusercontent.com/femto-code/logseq-one-theme/main/main.css");
+  ```
+  (with borders) or
+  ```css
+  @import url("https://raw.githubusercontent.com/femto-code/logseq-one-theme/main/main2.css");
+  ```
+  for version without borders (v2)
+
+#### Fully manual way (if other ways don't work)
+
+Copy `main.css` [contents](https://raw.githubusercontent.com/femto-code/logseq-one-theme/master/main.css) (with borders) or `main2.css` [contents](https://raw.githubusercontent.com/femto-code/logseq-one-theme/master/main2.css) (without borders, v2) into `<graph_base>/logseq/custom.css`
+
+> Keep in mind, that each update needs to applied manually when using this approach!
 
 ## How to build
 
@@ -103,6 +122,7 @@ Copy `main.css` [contents](https://raw.githubusercontent.com/femto-code/logseq-o
   ```shell
   npm run build
   ```
+  > Tip: append `:v2` for borderless theme variant
 
 ## Credits
 
@@ -126,7 +146,7 @@ Feel free to submit an [issue](https://github.com/femto-code/logseq-one-theme/is
 
 ---
 <div align="center">
-Copyright © 2023 <a href="https://github.com/femto-code">femto-code</a>
+Copyright © 2024 <a href="https://github.com/femto-code">femto-code</a>
 
 [MIT License](./LICENSE)
 </div>
