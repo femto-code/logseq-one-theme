@@ -138,7 +138,6 @@ html ::-webkit-scrollbar-thumb:hover {
     /* Bold and italic styles */
     b {
         font-weight: 600;
-        color: var(--ct-bold-color);
     }
 
     i:not(.ti),
@@ -272,6 +271,9 @@ html[data-theme="dark"] {
     }
     .focus\:bg-accent:focus {
         background-color: var(--ls-primary-background-color);
+    }
+    .content b {
+        color: var(--ct-bold-color);
     }
 }
 
