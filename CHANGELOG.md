@@ -1,3 +1,12 @@
+## [0.2.2](https://github.com/femto-code/logseq-one-theme/compare/v0.2.1...v0.2.2) (2024-03-04)
+
+
+### Bug Fixes
+
+* add card margins ([118fb20](https://github.com/femto-code/logseq-one-theme/commit/118fb200c45dd34f19ff5e77874276d077b3b22f))
+* compatibility with Logseq v0.10.7 ([f824986](https://github.com/femto-code/logseq-one-theme/commit/f824986b2f269c5ce8de27020fd041a4b5340337))
+* refactoring of variables and values ([86cf537](https://github.com/femto-code/logseq-one-theme/commit/86cf537dcef4b12ecd6846247559f6193895c096))
+
 ## [0.2.1](https://github.com/femto-code/logseq-one-theme/compare/v0.2.0...v0.2.1) (2024-02-05)
 
 
