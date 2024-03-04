@@ -95,7 +95,7 @@ html[data-theme=dark] {
   --lx-gray-12: #f1f2f4;
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-header-button-hover: #1D2026;
-  --lx-gray-04: #1D2026;
+  --lx-gray-04: #282C34;
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
   --ls-left-sidebar-active-background: #393e47;
   --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
@@ -127,7 +127,7 @@ html[data-theme=dark] {
   --block-ref-bg: rgb(86 90 122 / 40%);
   --block-ref-bg-hv: rgb(86 90 122 / 50%);
   --popover: 216deg 13.16% 14.9%;
-  --lx-popover-bg: hsl(var(--popover));
+  --lx-popover-bg: var(--lx-gray-03);
   --border: 220deg 8.26% 21.37%;
   --accent: 220deg 13.04% 18.04%;
   --ct-color-level-1: #21252B;
@@ -270,6 +270,14 @@ html[data-theme=light] {
   background-color: var(--ct-color-level-1) !important;
 }
 
+@media screen and (max-width: 992px) {
+  #main-content-container .cp__sidebar-main-content > .mx-auto {
+    padding: 10px 5px 10px 10px;
+  }
+  #main-content-container {
+    padding: 0.5rem 0 0 0.3rem;
+  }
+}
 /* Scrollbar style */
 html ::-webkit-scrollbar {
   width: 8px;
@@ -1563,4 +1571,12 @@ body:is([data-page=page], [data-page=home]).is-banner-active .cp__sidebar-main-c
 
 html[data-theme=dark] .datepicker {
   background-color: var(--ls-primary-background-color);
+}
+
+#main-container, #app-container {
+  background-color: #21252B !important;
+}
+
+.dark .left-sidebar-inner {
+  background: #282C34;
 }
