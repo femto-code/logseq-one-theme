@@ -55,3 +55,9 @@ html[data-theme="dark"] {
         background-color: var(--ls-primary-background-color);
     }
 }
+#main-container, #app-container {
+    background-color: #21252B!important;
+}
+.dark .left-sidebar-inner {
+    background: #282C34;
+}
