@@ -1,3 +1,12 @@
+## [0.2.4](https://github.com/femto-code/logseq-one-theme/compare/v0.2.3...v0.2.4) (2024-03-04)
+
+
+### Bug Fixes
+
+* **bold font color:** only apply custom bold color in dark theme ([266ae04](https://github.com/femto-code/logseq-one-theme/commit/266ae0460ee0dee3df9cef30729ff1f06102c4e8))
+* **dark theme sidebar container:** background color ([73559de](https://github.com/femto-code/logseq-one-theme/commit/73559debf478e863ef52ba9de497dbd261eaea15))
+* light themes color ([6725c31](https://github.com/femto-code/logseq-one-theme/commit/6725c31a1549015ec05a50c81e93746d48248e88))
+
 ## [0.2.3](https://github.com/femto-code/logseq-one-theme/compare/v0.2.2...v0.2.3) (2024-03-04)
 
 
