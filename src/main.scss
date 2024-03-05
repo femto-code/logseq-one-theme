@@ -29,10 +29,3 @@
 @import 'tasks.scss';
 @import 'admonition-blocks.scss';
 @import 'page-prop-icons.scss';
-
-
-html[data-theme="dark"] {
-    #right-sidebar-container {
-        background: #21252B;
-    }
-}

@@ -16,6 +16,10 @@
     .cp__right-sidebar-topbar {
         background-color: var(--ls-main-content-background);
     }
+
+    #right-sidebar-container {
+        background-color: var(--ct-right-sidebar-bg-color);
+    }
 }
 
 
@@ -221,9 +225,6 @@ html[data-theme="light"] {
     }
     .cp__sidebar-help-menu-popup {
         background-color: var(--ls-primary-background-color);
-    }
-    #right-sidebar-container {
-        background: #F1F2F4;
     }
 }
 

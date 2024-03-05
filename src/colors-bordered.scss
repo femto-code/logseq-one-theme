@@ -134,6 +134,7 @@ html[data-theme="dark"] {
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
 
     --ct-cm-bg: #21252B;
+    --ct-right-sidebar-bg-color: #21252B;
 }
 
 /* *****************************
@@ -247,4 +248,6 @@ html[data-theme="light"] {
     --primary: 225.45deg 69.23% 72%; // e.g. used for button bg in settings
     --secondary: 225deg 100% 91%;
     --lx-accent-10: 225.45deg 69.23% 75%; // e.g. used for hover text color in plugins marketplace ("Themes (xx)")
+
+    --ct-right-sidebar-bg-color: #E2E4E9;
 }
