@@ -17,14 +17,16 @@
   <a href="#credits">🙏 Credits</a>
 </p>
 
-<p align="center">A clean theme for <a href="https://github.com/logseq/logseq">Logseq</a> inspired by One Dark Pro.<br>Tested with Logseq up to v0.10.7!</p>
+<p align="center">A clean theme for <a href="https://github.com/logseq/logseq">Logseq</a> inspired by One Dark Pro.<br>Tested with Logseq v0.10.7!</p>
 
 ## Accent colors not fully supported (yet)
 
-For best experience, please disable the accent color!
-<small>Tests have shown that the first accent color option (Logseq classical color) breaks the layout and colors!</small>
+For the best experience, please disable the accent color!
+<small>Most accent colors actually work. Tests have shown that the first accent color option (named "Logseq classical color") breaks the layout and colors!</small>
 
 ![](./accent.png)
+
+> Use the Logseq version named above in combination with the latest theme release to ensure best appearance!
 
 ## Screenshots
 ![](./preview.png)
