@@ -18,7 +18,8 @@
     }
 }
 
-/* Make "New page" button opaque */
+
+/* Make "+ Create" button background opaque */
 .left-sidebar-inner .create {
     background-image: none!important;
 }
@@ -207,16 +208,6 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 
 html[data-theme="light"] {
-    .cp__header {
-        div[data-type="toolbar"] {
-            a {
-                color: var(--ls-header-button-text-color, var(--lx-gray-11, var(--ls-header-button-background)));
-            }
-            a:hover {
-                color: var(--ls-header-button-text-color-hover, var(--lx-gray-12, var(--ls-header-button-background)));
-            }
-        }
-    }
     /* Autocomplete section borders */
     #ui__ac-inner div:not(:first-child) div.ui__ac-group-name {
         border-top: 1px solid var(--ls-border-color);
@@ -224,9 +215,6 @@ html[data-theme="light"] {
     .inline code {
         border: 1px solid hsl(220, 13%, 18%, 0.08);
         padding: 2px 4px !important;
-    }
-    .cp__themes-installed .it:not(.is-selected) {
-        background-color: unset;
     }
     .absolute-modal {
         border: 1px solid lightgray;
@@ -240,10 +228,6 @@ html[data-theme="light"] {
 }
 
 html[data-theme="dark"] {
-    .dropdown-wrapper a {
-        opacity: 1 !important;
-        color: var(--ls-primary-text-color);
-    }
     .inline code {
         border: 1px solid hsl(203, 13%, 60%, 0.2);
         padding: 2px 4px !important;
@@ -263,14 +247,6 @@ html[data-theme="dark"] {
     // fix white background of textarea (e.g. in plugin settings)
     .form-control textarea {
         background-color: var(--ls-modal-panel-color, var(--lx-gray-04, var(--ls-secondary-background-color)));
-    }
-    // support right click popover in left sidebar
-    .bg-popover {
-        background: var(--ls-secondary-background-color);
-        border-color: var(--ls-border-color);
-    }
-    .focus\:bg-accent:focus {
-        background-color: var(--ls-primary-background-color);
     }
     .content b {
         color: var(--ct-bold-color);

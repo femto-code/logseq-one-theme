@@ -51,9 +51,6 @@ body:is([data-page='page'], [data-page='home']).is-banner-active .cp__sidebar-ma
     border-radius: 0 0 10px 10px !important;
 }
 html[data-theme="dark"] {
-    .datepicker {
-        background-color: var(--ls-primary-background-color);
-    }
     #main-container, #app-container {
         background-color: #21252B!important;
     }
