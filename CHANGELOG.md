@@ -1,3 +1,17 @@
+# [0.3.0](https://github.com/femto-code/logseq-one-theme/compare/v0.2.4...v0.3.0) (2024-03-05)
+
+
+### Bug Fixes
+
+* **cleanup:** remove invalid (old) rules ([ed77415](https://github.com/femto-code/logseq-one-theme/commit/ed77415c37a9b10ede3c3c6d8a596b976752d41e))
+* **right sidebar:** background color across all theme variants ([1259f1d](https://github.com/femto-code/logseq-one-theme/commit/1259f1d7d33dafbf02a7dd8769c9364ea80194f3))
+* theme default accent color (datepicker) ([b36f830](https://github.com/femto-code/logseq-one-theme/commit/b36f830b06c69d38378752d2c4ca4b698ecb3ab3))
+
+
+### Features
+
+* improved color palette (light + dark) ([87362f9](https://github.com/femto-code/logseq-one-theme/commit/87362f90753031b27e4a4719662815bf280d1351))
+
 ## [0.2.4](https://github.com/femto-code/logseq-one-theme/compare/v0.2.3...v0.2.4) (2024-03-04)
 
 
