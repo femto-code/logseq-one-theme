@@ -50,8 +50,8 @@
 html[data-theme=dark] {
   --ls-primary-background-color: var(--cp-darker);
   --ls-secondary-background-color: var(--cp-darkest);
-  --ls-tertiary-background-color: var(--cp-dark);
-  --ls-quaternary-background-color: var(--cp-gray);
+  --ls-tertiary-background-color: var(--cp-gray);
+  --ls-quaternary-background-color: var(--cp-lighter);
   --ls-top-bar-background: var(--cp-darker);
   --ls-main-content-background: var(--cp-darker);
   --ls-left-sidebar-background: var(--cp-darkest);
@@ -95,7 +95,7 @@ html[data-theme=dark] {
   --lx-gray-12: var(--cp-white);
   --ls-header-button-background: var(--ls-secondary-background-color);
   --ls-header-button-hover: #1D2026;
-  --lx-gray-04: #282C34;
+  --lx-gray-04: var(--cp-darker);
   --ls-left-sidebar-text-color: var(--ls-primary-text-color);
   --ls-left-sidebar-active-background: #393e47;
   --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
@@ -125,12 +125,13 @@ html[data-theme=dark] {
   --popover: 216deg 13.16% 14.9%;
   --lx-popover-bg: var(--lx-gray-03);
   --border: 220deg 8.26% 21.37%;
-  --accent: 220deg 13.04% 18.04%;
+  --accent: 225.45deg 69.23% 71.96%;
   --ct-color-level-1: var(--cp-darkest);
   --primary: 225.45deg 69.23% 72%;
   --secondary: 225.33deg 26.63% 41%;
   --lx-accent-10: 225.45deg 69.23% 75%;
   --ct-cm-bg: var(--cp-dark);
+  --ct-right-sidebar-bg-color: #21252B;
 }
 
 /* *****************************
@@ -210,13 +211,15 @@ html[data-theme=light] {
   --box-shadow-sm: rgba(171, 171, 171, 0.1) 0 2px 3px 0;
   --block-ref-bg: hsla(0, 0%, 40%, .1);
   --block-ref-bg-hv: hsla(0, 0%, 40%, .2);
+  --accent: 225.45deg 69.23% 71.96%;
   --lx-gray-03: #F7F7F7;
   --lx-popover-bg: var(--lx-gray-03);
-  --lx-gray-04: var(--ls-tertiary-background-color);
+  --lx-gray-04: #E2E4E9;
   --ct-color-level-1: #eceded;
   --primary: 225.45deg 69.23% 72%;
   --secondary: 225deg 100% 91%;
   --lx-accent-10: 225.45deg 69.23% 75%;
+  --ct-right-sidebar-bg-color: #F1F2F4;
 }
 
 /*****************************************
@@ -232,8 +235,11 @@ html[data-theme=light] {
 #right-sidebar .cp__right-sidebar-topbar {
   background-color: var(--ls-main-content-background);
 }
+#right-sidebar #right-sidebar-container {
+  background-color: var(--ct-right-sidebar-bg-color);
+}
 
-/* Make "New page" button opaque */
+/* Make "+ Create" button background opaque */
 .left-sidebar-inner .create {
   background-image: none !important;
 }
@@ -393,12 +399,6 @@ html ::-webkit-scrollbar-thumb:hover {
 html[data-theme=light] {
   /* Autocomplete section borders */
 }
-html[data-theme=light] .cp__header div[data-type=toolbar] a {
-  color: var(--ls-header-button-text-color, var(--lx-gray-11, var(--ls-header-button-background)));
-}
-html[data-theme=light] .cp__header div[data-type=toolbar] a:hover {
-  color: var(--ls-header-button-text-color-hover, var(--lx-gray-12, var(--ls-header-button-background)));
-}
 html[data-theme=light] #ui__ac-inner div:not(:first-child) div.ui__ac-group-name {
   border-top: 1px solid var(--ls-border-color);
 }
@@ -406,23 +406,13 @@ html[data-theme=light] .inline code {
   border: 1px solid hsla(220, 13%, 18%, 0.08);
   padding: 2px 4px !important;
 }
-html[data-theme=light] .cp__themes-installed .it:not(.is-selected) {
-  background-color: unset;
-}
 html[data-theme=light] .absolute-modal {
   border: 1px solid lightgray;
 }
 html[data-theme=light] .cp__sidebar-help-menu-popup {
   background-color: var(--ls-primary-background-color);
 }
-html[data-theme=light] #right-sidebar-container {
-  background: #F1F2F4;
-}
 
-html[data-theme=dark] .dropdown-wrapper a {
-  opacity: 1 !important;
-  color: var(--ls-primary-text-color);
-}
 html[data-theme=dark] .inline code {
   border: 1px solid hsla(203, 13%, 60%, 0.2);
   padding: 2px 4px !important;
@@ -440,13 +430,6 @@ html[data-theme=dark] mark {
 }
 html[data-theme=dark] .form-control textarea {
   background-color: var(--ls-modal-panel-color, var(--lx-gray-04, var(--ls-secondary-background-color)));
-}
-html[data-theme=dark] .bg-popover {
-  background: var(--ls-secondary-background-color);
-  border-color: var(--ls-border-color);
-}
-html[data-theme=dark] .focus\:bg-accent:focus {
-  background-color: var(--ls-primary-background-color);
 }
 html[data-theme=dark] .content b {
   color: var(--ct-bold-color);
@@ -1547,8 +1530,4 @@ a.tooltip-priority {
 
 .page-property-key[data-ref|=plugin]::before {
   content: "\ebd9";
-}
-
-html[data-theme=dark] #right-sidebar-container {
-  background: #21252B;
 }
