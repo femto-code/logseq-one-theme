@@ -29,8 +29,8 @@ html[data-theme="dark"] {
     
     --ls-primary-background-color: var(--cp-darker);
     --ls-secondary-background-color: var(--cp-darkest); // color-level-1 / ls-menu-hover-color
-    --ls-tertiary-background-color: var(--cp-dark);
-    --ls-quaternary-background-color: var(--cp-gray);
+    --ls-tertiary-background-color: var(--cp-gray);
+    --ls-quaternary-background-color: var(--cp-lighter);
 
     --ls-top-bar-background: var(--cp-darker);
     --ls-main-content-background: var(--cp-darker);
@@ -82,7 +82,7 @@ html[data-theme="dark"] {
     --lx-gray-12: var(--cp-white);
     --ls-header-button-background: var(--ls-secondary-background-color);
     --ls-header-button-hover: #1D2026; // removed since v0.10.7 -> instead: --lx-gray-04
-    --lx-gray-04: #282C34;
+    --lx-gray-04: var(--cp-darker);
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
     --ls-left-sidebar-active-background: #393e47;
     --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
@@ -232,7 +232,7 @@ html[data-theme="light"] {
     --accent: 225.45deg 69.23% 71.96%;
     --lx-gray-03: #F7F7F7; // .references-blocks-item, #create-button, --ls-settings-dropdown-background
     --lx-popover-bg: var(--lx-gray-03);
-    --lx-gray-04: var(--ls-tertiary-background-color); // left sidebar hovers, --ls-modal-panel-color (defined above, overwrites)
+    --lx-gray-04: #E2E4E9; // left sidebar hovers, --ls-modal-panel-color (defined above, overwrites)
     --ct-color-level-1: #eceded;
     --primary: 225.45deg 69.23% 72%; // e.g. used for button bg in settings
     --secondary: 225deg 100% 91%;

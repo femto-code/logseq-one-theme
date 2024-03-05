@@ -28,8 +28,8 @@ html[data-theme="dark"] {
     
     --ls-primary-background-color: #282C34;
     --ls-secondary-background-color: #21252B;
-    --ls-tertiary-background-color: #1D2026;
-    --ls-quaternary-background-color: #1e2126;
+    --ls-tertiary-background-color: #282C34;
+    --ls-quaternary-background-color: #32363e;
 
     --ls-top-bar-background: #21252B;
     --ls-main-content-background: #21252B;
@@ -81,7 +81,7 @@ html[data-theme="dark"] {
     --lx-gray-12: #f1f2f4;
     --ls-header-button-background: var(--ls-secondary-background-color);
     --ls-header-button-hover: #1D2026;
-    --lx-gray-04: #282C34;
+    --lx-gray-04: #21252b;
     --ls-left-sidebar-text-color: var(--ls-primary-text-color);
     --ls-left-sidebar-active-background: #393e47;
     --ls-left-sidebar-hover-background: var(--ls-quaternary-background-color);
@@ -244,6 +244,7 @@ html[data-theme="light"] {
     --accent: 225.45deg 69.23% 71.96%;
     --lx-gray-03: #F7F7F7;
     --lx-popover-bg: var(--lx-gray-03);
+    --lx-gray-04: #E2E4E9;
     --ct-color-level-1: #eceded;
     --primary: 225.45deg 69.23% 72%; // e.g. used for button bg in settings
     --secondary: 225deg 100% 91%;
