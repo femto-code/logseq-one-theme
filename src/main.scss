@@ -29,3 +29,11 @@
 @import 'tasks.scss';
 @import 'admonition-blocks.scss';
 @import 'page-prop-icons.scss';
+
+/* quick fix: hr border-color controlled by
+*  --lx-gray-05: var(--cp-darker); // --ls-menu-hover-color
+* this would mean same as bg color :(
+*/
+.content hr {
+    border-color: #32363e;
+}
