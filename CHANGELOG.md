@@ -1,3 +1,12 @@
+## [0.3.1](https://github.com/femto-code/logseq-one-theme/compare/v0.3.0...v0.3.1) (2024-03-09)
+
+
+### Bug Fixes
+
+* **main content margins rule for mobile:** reduce the width up to which mobile rules apply ([5d5d929](https://github.com/femto-code/logseq-one-theme/commit/5d5d929dc96b1d211946373a481a461870a3cb0c))
+* **v2, borderless variant:** content horizontal color ([8918a66](https://github.com/femto-code/logseq-one-theme/commit/8918a66ec40d9657be6109fa025aa79a46b4d0a1))
+* **v2, borderless variant:** reduce main content max width ([e254151](https://github.com/femto-code/logseq-one-theme/commit/e254151550e2fb83c2ccccc1cbebd18f401cd374))
+
 # [0.3.0](https://github.com/femto-code/logseq-one-theme/compare/v0.2.4...v0.3.0) (2024-03-05)
 
 
